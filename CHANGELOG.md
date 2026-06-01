@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.6
+
+- `docs/gpt-fixed-context-2026-06-01-gamified-visual-v1/` をGPT固定情報源フォルダとして監査・補強
+- `15_PROMPTS_AND_NEXT_CODEX_TASKS.md` を追加し、既存プロンプト、Day1 v2 PNG再生成要素、PR/merge時の注意を整理
+- 固定情報源のREADME、プロジェクト概要、カリキュラム、セッション索引、Day1 v1/v2状態、Manifestを増補
+- `docs/GPT_FIXED_CONTEXT_CURRENT.md` と `docs/current_git_status.md` を現在の作業ブランチ・固定情報源状態に更新
+- PNG画像、HTML、CSSは固定情報源フォルダへコピーせず、Markdown内のパス記録に留めた
+
 ## 0.1.5
 
 - ゲーミフィケーション方針、仕組みカタログ、全5回ミッションマップを追加

@@ -2,8 +2,12 @@
 
 ## Priority 1
 
+- GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-gamified-visual-v1/` の内容を最終確認する
+- PR `docs/gamified-visual-foundation-v1` を作成し、docs中心・PNG再生成なし・既存IP模倣なしを明記する
 - Day1インフォグラフィックv2方針を確認する
+- Day1 v2 PNG再生成プロンプトを作成する
 - 確認後、v2ストーリーボードに沿って16:9 PNGと4:5 PNGを再生成する
+- 再生成後、Zoom表示とスマホ表示を確認する
 - Page 1を「今日のミッション」化
 - Page 5を「ビジネス探偵ミッション」化
 - Page 6を「Final Mission」化
@@ -17,6 +21,7 @@
 
 ## Priority 3
 
+- PR merge後に `docs/current_git_status.md` と固定情報源のHEAD情報を更新
 - Day2以降のミッション設計
 - 全体クエストマップ作成
 - バッジ・スタンプ・進捗表のデザイン統一
