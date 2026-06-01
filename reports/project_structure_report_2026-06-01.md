@@ -3,9 +3,10 @@
 ## 現在の状態
 
 - project root: `junior-entrepreneurship-workshop/`
-- git branch: Gitリポジトリではないため取得不可
-- HEAD: Gitリポジトリではないため取得不可
-- worktree status: Gitリポジトリではないため取得不可
+- git branch: `main`
+- HEAD: `5719070925575acca6ca0b92eefa2c7eafa73543`
+- worktree status: clean at initial GitHub push
+- GitHub repo: `https://github.com/yukinohana42/business_starting_project.git`
 
 ## トップレベル構成
 

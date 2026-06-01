@@ -9,6 +9,9 @@
 - `prompts/session_improvement_prompt.md`: 実施後改善
 - `prompts/codex_next_tasks.md`: Codexに依頼しやすい次タスク
 - `prompts/day1_infographic_generation_prompt.md`: 第1回Zoom共有用6枚構成インフォグラフィック生成
+- `prompts/codex_freeze_gpt_context_prompt.md`: GitHub push後の現状固定とGPT固定情報源更新
+- `prompts/codex_design_brushup_plan_prompt.md`: ゲーミフィケーション・キャラクター・デザイン方針の具体化
+- `prompts/codex_day1_material_improvement_prompt.md`: Day1教材改善
 
 ## 使い方
 
@@ -22,6 +25,9 @@ ChatGPTやCodexに依頼するときは、まず `00_README_FOR_GPT.md` と `02_
 - 親向け説明を作る: `parent_slide_generation_prompt.md`
 - 実施後メモから改善する: `session_improvement_prompt.md`
 - 第1回6枚構成インフォグラフィックを画像化する: `day1_infographic_generation_prompt.md`
+- GitHub初回push後の固定情報源を更新する: `codex_freeze_gpt_context_prompt.md`
+- 教材全体のデザイン方針を具体化する: `codex_design_brushup_plan_prompt.md`
+- Day1教材をブラッシュアップする: `codex_day1_material_improvement_prompt.md`
 
 ## 次に作るとよいプロンプト
 
