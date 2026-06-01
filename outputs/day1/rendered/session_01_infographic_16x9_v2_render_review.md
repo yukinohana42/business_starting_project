@@ -7,15 +7,73 @@
 
 ## 今回の範囲
 
-16:9 Zoom共有用のv2 HTML/CSSを新規作成しました。既存v1の `session_01_infographic_16x9.html` と `session_01_infographic_16x9.css` は破壊的に変更していません。
+16:9 Zoom共有用のv2 HTML/CSSを新規作成し、1920 x 1080pxのPNG 6枚とcontact sheetを生成しました。既存v1の `session_01_infographic_16x9.html` と `session_01_infographic_16x9.css` は破壊的に変更していません。
 
-PNG再生成、PDF生成、PPTX生成、4:5版作成は行っていません。
+PDF生成、PPTX生成、4:5版作成は行っていません。既存v1 PNGも上書きしていません。
 
 ## 表示確認ステータス
 
-- HTML/CSSの構成、文量、ページごとのメッセージ量について自己チェック済み。
-- この環境ではアプリ内ブラウザの起動が安定せず、実ブラウザでの目視確認は未完了。
-- PNG再生成前に、人間が `outputs/day1/rendered/session_01_infographic_16x9_v2.html?page=1` から `?page=6` までを開いて確認する。
+- Chrome headless screenshotでPNG生成済み。
+- contact sheetと各ページPNGを目視確認済み。
+- 実際のZoom画面共有での見え方は、人間確認が必要。
+
+## PNG生成結果
+
+### 16:9 v2 PNG
+
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_page_01.png` 1920 x 1080
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_page_02.png` 1920 x 1080
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_page_03.png` 1920 x 1080
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_page_04.png` 1920 x 1080
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_page_05.png` 1920 x 1080
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_page_06.png` 1920 x 1080
+
+### Contact Sheet
+
+- `outputs/day1/rendered/session_01_infographic_16x9_v2_contact_sheet.png` 1552 x 624
+
+## PNG表示確認結果
+
+### Page 1: 今日のミッション
+
+- 文字の重なりなし。
+- メインコピー、ゴール文、探偵ノートの視線順は自然。
+- 初回生成時に本文末尾だけが孤立して改行されたため、HTMLで自然な2行に調整した。
+
+### Page 2: 仕事とは何か
+
+- 文字の重なりなし。
+- Before/Afterと問いの位置は読みやすい。
+- 下部の変化カードもはみ出しなし。
+
+### Page 3: お金とは何か
+
+- 文字の重なりなし。
+- お金は「ありがとうが見える形」として穏やかに表現できている。
+- お金の束、高級品、儲けを煽る表現はなし。
+
+### Page 4: 価値とは何か
+
+- 文字の重なりなし。
+- 初回生成時に吹き出しが価値変換カードの上端へ少しかかっていたため、CSSで上方向へ移動した。
+- 3枚の価値変換カードは読みやすい。
+
+### Page 5: ビジネス探偵ミッション
+
+- 文字の重なりなし。
+- 3例版のため、コンビニ、塾/学習サポート、スマホゲームを1枚ずつ読める。
+- YouTuberとラーメン屋は詰め込まず、画面の重さを抑えられている。
+
+### Page 6: Final Mission
+
+- 文字の重なりなし。
+- Final Missionカードの空欄は十分大きい。
+- 成功/失敗や採点ではなく、自分の観察を書く構成に見える。
+
+## 今回の微修正
+
+- Page 1: リード文の改行を自然にするため、HTML上で `今日は、仕事を` の後に改行を入れた。
+- Page 4: 価値変換カード上の吹き出し位置を上方向へ調整し、カードとの重なりを避けた。
 
 ## 各ページの意図
 
@@ -78,7 +136,7 @@ PNG再生成、PDF生成、PPTX生成、4:5版作成は行っていません。
 - コンビニ、塾/学習サポート、スマホゲームは、生活の便利さ、学び、楽しさの3方向を見せられる。
 - YouTuberとラーメン屋は予備例・カード例として残し、このページには詰め込まない。
 
-## PNG再生成前に人間が確認すべき点
+## 人間が確認すべき点
 
 - Page 1の「お金と仕事の正体を見破れ」が、強すぎず入りやすいか。
 - Page 2のBefore/Afterが、困っている人を笑う表現に見えないか。
@@ -87,6 +145,20 @@ PNG再生成、PDF生成、PPTX生成、4:5版作成は行っていません。
 - Page 5の3例にスマホゲームを残してよいか。
 - Page 6のFinal Missionが、採点や成功/失敗に見えないか。
 - HTML/CSSの簡易人物表現で十分か、画像生成を使うべきか。
+- contact sheetをZoom共有の実サイズに近い状態で見たとき、Page 5の3例が読みやすいか。
+
+## 未確認の点
+
+- 実際のZoom共有時の表示サイズ、圧縮、参加者側画面での可読性。
+- 家庭内実施で、子供がPage 5のスマホゲーム例を価値の変化として自然に受け取るか。
+- 画像生成キャラクターへ進むか、HTML/CSS簡易人物表現をv2の本線にするか。
+
+## 次の判断
+
+- 4:5展開: contact sheetを人間確認して大きな問題がなければ進めてよい。
+- 台本反映: 16:9 v2のページ順とコピーは安定しているため、45分台本へ反映してよい。
+- カード反映: Page 5の3例本線と予備例の扱いを確認後、ミッションカードv2へ反映してよい。
+- ワークシート反映: Page 6のFinal Mission文とPage 5の「誰が、どう変わる？」欄を反映してよい。
 
 ## 4:5展開時に注意する点
 

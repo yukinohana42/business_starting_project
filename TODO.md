@@ -5,10 +5,10 @@
 - GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-gamified-visual-v1/` の内容を最終確認する
 - PR `docs/gamified-visual-foundation-v1` を作成し、docs中心・PNG再生成なし・既存IP模倣なしを明記する
 - Day1インフォグラフィックv2方針を確認する
-- 16:9 v2 HTML/CSSを人間確認する
-- Day1 v2 PNG再生成プロンプトを作成する
-- 16:9 v2に問題がなければPNG再生成する
-- その後4:5版へ展開する
+- 16:9 v2 contact sheetを人間確認する
+- 16:9 v2がOKなら4:5版へ展開する
+- v2構成を台本・カード・ワークシートへ反映する
+- 最後に固定情報源を更新する
 - 再生成後、Zoom表示とスマホ表示を確認する
 - Page 1を「今日のミッション」化
 - Page 5を「ビジネス探偵ミッション」化
