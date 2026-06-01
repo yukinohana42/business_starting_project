@@ -18,6 +18,6 @@
 | `13_SAFETY_AND_TONE_GUIDELINES.md` | `docs/safety_and_tone_guidelines.md` | 安全性とトーン |
 | `14_SLIDES_AND_CARDS_INDEX.md` | `slides/`, `cards/` | スライドとカード索引 |
 | `15_WORKSHEETS_INDEX.md` | `worksheets/` | ワークシート索引 |
-| `16_PROMPTS_INDEX.md` | `prompts/` | プロンプト索引 |
-| `17_CURRENT_STATUS_AND_NEXT_TASKS.md` | `TODO.md`, 現状確認 | 現在地と次タスク |
+| `16_PROMPTS_INDEX.md` | `prompts/`, `prompts/codex_freeze_gpt_context_prompt.md`, `prompts/codex_design_brushup_plan_prompt.md`, `prompts/codex_day1_material_improvement_prompt.md` | プロンプト索引 |
+| `17_CURRENT_STATUS_AND_NEXT_TASKS.md` | `TODO.md`, `docs/current_git_status.md`, 現状確認 | 現在地と次タスク |
 

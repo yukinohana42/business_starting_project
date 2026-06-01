@@ -6,15 +6,28 @@
 
 このフォルダだけ読めば、プロジェクトの思想、設計、教材の配置、現状、次にやるべきことがわかる状態を目指しています。
 
+このフォルダは、次回以降のChatGPT/Codexが最初に読む固定情報源です。教材を更新するときは、ここにある思想、設計原則、現在地を先に確認してください。
+
+## GitHubリポジトリ
+
+- GitHub repo: `https://github.com/yukinohana42/business_starting_project.git`
+- project root: `C:\Users\yukin\OneDrive\ドキュメント\Starting_a_business_for_family\junior-entrepreneurship-workshop`
+- 初回push済みHEAD: `5719070925575acca6ca0b92eefa2c7eafa73543`
+- 初回commit message: `initial entrepreneurship workshop project`
+- branch: `main`
+- 初回push時のworktree: clean
+
 ## 読む順番
 
 1. `00_README_FOR_GPT.md`
 2. `02_SOURCE_OF_TRUTH.md`
 3. `01_PROJECT_OVERVIEW.md`
-4. `07_CURRICULUM_5_SESSIONS.md`
-5. `09_SESSION_INDEX.md`
-6. `17_CURRENT_STATUS_AND_NEXT_TASKS.md`
-7. 必要に応じて、スライド、カード、ワークシート、プロンプトの索引を読む
+4. `03_DESIGN_PRINCIPLES.md`
+5. `04_AGENTS_RULES.md`
+6. `07_CURRICULUM_5_SESSIONS.md`
+7. `09_SESSION_INDEX.md`
+8. `17_CURRENT_STATUS_AND_NEXT_TASKS.md`
+9. 必要に応じて、スライド、カード、ワークシート、プロンプトの索引を読む
 
 ## このプロジェクトの一言説明
 
@@ -33,6 +46,8 @@
 まずは `02_SOURCE_OF_TRUTH.md` を守ってください。
 
 このプロジェクトは、子供に起業を押し付けるものではありません。会社に入るとしても、自分で何かを始めるとしても役立つ「価値を作る力」を育てるためのものです。
+
+生成物やデザイン改善は、必ず `02_SOURCE_OF_TRUTH.md` と `03_DESIGN_PRINCIPLES.md` に従ってください。特に、価値は言葉だけでなく「相手の変化」として見せます。
 
 ## 今後ChatGPTに依頼できる作業例
 
