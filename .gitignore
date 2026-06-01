@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Build / output temp
+dist/
+build/
+.cache/
+.tmp/
+temp/
+
+# Logs
+*.log
+
+# Local editor
+.vscode/
+.idea/
+
+# Generated system files
+*.bak
+*.tmp
+*.temp
+
+# Browser render profiles / local caches
+output/parent_infographic_pdf/chrome-profile/
+output/parent_infographic_pdf/edge-profile/

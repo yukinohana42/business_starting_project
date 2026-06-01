@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>親御さん向けインフォグラフィック 6枚</title>
+  <style>
+    :root {
+      --ink: #1d2939;
+      --muted: #667085;
+      --paper: #f4f7fb;
+      --navy: #1f3a5f;
+      --blue: #2f6fed;
+      --green: #14996b;
+      --orange: #f08a24;
+      --purple: #7b61ff;
+      --red: #dc4c3e;
+      --yellow: #f3b61f;
+      --line: #d8e0ea;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif;
+      line-height: 1.55;
+    }
+
+    .deck {
+      display: grid;
+      gap: 28px;
+      padding: 28px;
+      justify-content: center;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 48px rgba(31, 58, 95, 0.14);
+      padding: 15mm;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 8mm;
+      background: linear-gradient(90deg, var(--navy), var(--blue), var(--green));
+    }
+
+    .page.day1::before { background: linear-gradient(90deg, var(--navy), var(--green)); }
+    .page.day2::before { background: linear-gradient(90deg, var(--navy), var(--orange)); }
+    .page.day3::before { background: linear-gradient(90deg, var(--navy), var(--purple)); }
+    .page.day4::before { background: linear-gradient(90deg, var(--navy), var(--yellow), var(--red)); }
+    .page.day5::before { background: linear-gradient(90deg, var(--navy), var(--blue)); }
+
+    .page-number {
+      position: absolute;
+      right: 15mm;
+      top: 13mm;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+
+    .eyebrow {
+      margin-top: 6mm;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 5px 0 10px;
+      color: var(--navy);
+      font-size: 34px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .lead {
+      max-width: 640px;
+      color: #344054;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 22px;
+    }
+
+    .tag {
+      border: 1px solid #cfe0f6;
+      border-radius: 999px;
+      background: #eef5ff;
+      color: #1f4b85;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 10px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+      padding: 14px;
+    }
+
+    .card strong {
+      color: var(--navy);
+    }
+
+    .icon-card {
+      min-height: 118px;
+    }
+
+    .icon {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .icon.blue { background: var(--blue); }
+    .icon.green { background: var(--green); }
+    .icon.orange { background: var(--orange); }
+    .icon.purple { background: var(--purple); }
+    .icon.red { background: var(--red); }
+    .icon.navy { background: var(--navy); }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .timeline-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 10px;
+      min-height: 128px;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .day-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      color: white;
+      font-weight: 800;
+      margin-bottom: 9px;
+      font-size: 13px;
+    }
+
+    .d1 { background: var(--green); }
+    .d2 { background: var(--orange); }
+    .d3 { background: var(--purple); }
+    .d4 { background: var(--red); }
+    .d5 { background: var(--blue); }
+
+    .timeline-item h3 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 22px 0 10px;
+    }
+
+    .section-title .bar {
+      width: 8px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--blue);
+    }
+
+    .section-title.green .bar { background: var(--green); }
+    .section-title.orange .bar { background: var(--orange); }
+    .section-title.purple .bar { background: var(--purple); }
+    .section-title.red .bar { background: var(--red); }
+
+    .steps {
+      display: grid;
+      gap: 9px;
+      margin-top: 10px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+      align-items: start;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #ffffff;
+    }
+
+    .step-num {
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #edf4ff;
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .step p {
+      font-size: 13px;
+    }
+
+    .callout {
+      margin-top: 18px;
+      border-radius: 8px;
+      padding: 16px;
+      background: #f1f7ff;
+      border: 1px solid #cfe0f6;
+    }
+
+    .callout.warning {
+      background: #fff8ed;
+      border-color: #f7d39c;
+    }
+
+    .callout.success {
+      background: #eefaf5;
+      border-color: #bfe8d8;
+    }
+
+    .callout h3 {
+      margin-bottom: 6px;
+    }
+
+    .question {
+      display: block;
+      margin-top: 8px;
+      color: var(--navy);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .formula {
+      border-radius: 8px;
+      background: #15233a;
+      color: white;
+      padding: 16px;
+      margin-top: 14px;
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .signal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .signal {
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 145px;
+      border: 1px solid var(--line);
+    }
+
+    .signal h3 {
+      color: white;
+      border-radius: 999px;
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 13px;
+    }
+
+    .signal ul,
+    .mini-list {
+      padding-left: 18px;
+      margin: 8px 0 0;
+      font-size: 13px;
+    }
+
+    .signal li,
+    .mini-list li {
+      margin: 4px 0;
+    }
+
+    .signal.blue-box { background: #eef5ff; }
+    .signal.yellow-box { background: #fff9e8; }
+    .signal.red-box { background: #fff1f0; }
+    .signal.blue-box h3 { background: var(--blue); }
+    .signal.yellow-box h3 { background: var(--yellow); color: #3a2d00; }
+    .signal.red-box h3 { background: var(--red); }
+
+    .footer-note {
+      position: absolute;
+      left: 15mm;
+      right: 15mm;
+      bottom: 11mm;
+      border-top: 1px solid var(--line);
+      padding-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .deck {
+        display: block;
+        padding: 0;
+      }
+
+      .page {
+        box-shadow: none;
+        border: 0;
+        page-break-after: always;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="page overview">
+      <div class="page-number">1 / 6</div>
+      <div class="eyebrow">家庭内起業ワークショップ</div>
+      <h1>起業を押し付けず、価値を作る力を育てる</h1>
+      <p class="lead">中学2年生の子供たちが起業セミナーに参加する前に、「誰かにとって価値あること」を見つけ、形にし、小さく試す視点を持つための5日間です。</p>
+
+      <div class="tag-row">
+        <span class="tag">家庭で30から60分</span>
+        <span class="tag">全5回</span>
+        <span class="tag">親はファシリテーター</span>
+        <span class="tag">最後は3分ピッチ</span>
+      </div>
+
+      <div class="grid-3">
+        <div class="card icon-card">
+          <div class="icon green">価</div>
+          <h3>価値を見つける</h3>
+          <p>困った、面倒、好き、欲しい気持ちの中から価値の種を探します。</p>
+        </div>
+        <div class="card icon-card">
+          <div class="icon blue">聞</div>
+          <h3>相手に聞く</h3>
+          <p>思い込みではなく、具体的な誰かの話から考えます。</p>
+        </div>
+        <div class="card icon-card">
+          <div class="icon purple">試</div>
+          <h3>小さく試す</h3>
+          <p>完璧に作る前に、反応を見て改善する練習をします。</p>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <span class="bar"></span>
+        <h2>5日間の流れ</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="day-label d1">1</span>
+          <h3>働く・お金・価値</h3>
+          <p>仕事は価値提供だと理解する。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="day-label d2">2</span>
+          <h3>価値の見つけ方</h3>
+          <p>日常の困りごとを観察する。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="day-label d3">3</span>
+          <h3>アイデア作り</h3>
+          <p>誰の何を解決するか決める。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="day-label d4">4</span>
+          <h3>PMFと実験</h3>
+          <p>本当に欲しいか小さく試す。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="day-label d5">5</span>
+          <h3>3分ピッチ</h3>
+          <p>セミナーで見る視点を持つ。</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h3>親御さんの役割</h3>
+        <p>正解を教える先生ではなく、「誰が困っている？」「今はどうしている？」「小さく試すなら？」と問いを出す人です。</p>
+      </div>
+
+      <div class="footer-note">避けたいこと: 起業を義務にする、将来不安を煽る、親が先に正解を言う。</div>
+    </section>
+
+    <section class="page day1">
+      <div class="page-number">2 / 6</div>
+      <div class="eyebrow">Day 1</div>
+      <h1>働く・お金・価値</h1>
+      <p class="lead">仕事は「物を売ること」だけではなく、誰かの状態を良くすることだと理解します。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>目的</h2>
+          <p>仕事は誰かへの価値提供であり、お金はその対価だと知る。</p>
+          <span class="question">問い: 一番ラクに稼いでいそうな仕事は？</span>
+        </div>
+        <div class="card">
+          <h2>成果物</h2>
+          <p>最後にこの1文を書きます。</p>
+          <div class="formula">仕事とは、______ を ______ に変えること。</div>
+        </div>
+      </div>
+
+      <div class="section-title green">
+        <span class="bar"></span>
+        <h2>やり方</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>ラーメン屋、コンビニ、YouTuberなど、身近な仕事を出す。</p></div>
+        <div class="step"><span class="step-num">2</span><p>その仕事が「誰のどんな状態を良くしているか」を考える。</p></div>
+        <div class="step"><span class="step-num">3</span><p>困ったを助かったに、面倒をラクに、退屈を楽しいに変えるゲームをする。</p></div>
+        <div class="step"><span class="step-num">4</span><p>仕事とお金を「価値へのありがとう」として言い換える。</p></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>子供がやること</h3>
+          <ul class="mini-list">
+            <li>仕事の例を出す</li>
+            <li>誰が助かっているか考える</li>
+            <li>価値変換の1文を書く</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>親の関わり</h3>
+          <p>正解を言わず、「その仕事は誰をどう助けている？」と聞く。</p>
+        </div>
+      </div>
+
+      <div class="footer-note">Day1の合言葉: 仕事は、誰かの状態を少し良くすること。</div>
+    </section>
+
+    <section class="page day2">
+      <div class="page-number">3 / 6</div>
+      <div class="eyebrow">Day 2</div>
+      <h1>価値の見つけ方</h1>
+      <p class="lead">すごい発明だけがビジネスの種ではありません。日常の不満、面倒、好きの中から価値の種を探します。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>目的</h2>
+          <p>困りごとや欲しい気持ちを観察し、相手に聞く準備をする。</p>
+          <span class="question">問い: 最近イラッとしたことは？</span>
+        </div>
+        <div class="card">
+          <h2>成果物</h2>
+          <p>困りごとリストと、3人に聞くインタビュー質問を作る。</p>
+        </div>
+      </div>
+
+      <div class="section-title orange">
+        <span class="bar"></span>
+        <h2>やり方</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>最近のイラッ、面倒、もっと楽しくしたいことを10個出す。</p></div>
+        <div class="step"><span class="step-num">2</span><p>それは誰が、いつ、どれくらい困っているのかを考える。</p></div>
+        <div class="step"><span class="step-num">3</span><p>家族、友達、先生など安全な相手に聞く質問を作る。</p></div>
+        <div class="step"><span class="step-num">4</span><p>次回までに3人へインタビューする。</p></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>良い聞き方</h3>
+          <ul class="mini-list">
+            <li>最近それで困ったことはある？</li>
+            <li>今はどうやって解決している？</li>
+            <li>どうなったらうれしい？</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>避けたい聞き方</h3>
+          <p>「こういうアプリがあったら使う？」だけだと、本当に困っているかが見えにくい。</p>
+        </div>
+      </div>
+
+      <div class="callout warning">
+        <h3>親の関わり</h3>
+        <p>「欲しい？」ではなく、過去の行動を聞くよう促します。相手の個人情報は書かず、安全な相手にだけ聞きます。</p>
+      </div>
+
+      <div class="footer-note">Day2の合言葉: 困りごとは、価値の種。</div>
+    </section>
+
+    <section class="page day3">
+      <div class="page-number">4 / 6</div>
+      <div class="eyebrow">Day 3</div>
+      <h1>アイデア作り</h1>
+      <p class="lead">インタビューから見えた困りごとをもとに、「誰の何を解決するのか」を具体的にします。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>目的</h2>
+          <p>自分たちが作りたいものではなく、相手が本当に欲しいものに近づける。</p>
+          <span class="question">問い: その困りごとは、誰が一番困っている？</span>
+        </div>
+        <div class="card">
+          <h2>成果物</h2>
+          <p>起業の基本文を作る。</p>
+          <div class="formula">これは、______ な人が、______ で困っているときに、______ できるサービスです。</div>
+        </div>
+      </div>
+
+      <div class="section-title purple">
+        <span class="bar"></span>
+        <h2>やり方</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>インタビュー結果を共有し、意外だった答えを出す。</p></div>
+        <div class="step"><span class="step-num">2</span><p>「みんな」ではなく、助けたい具体的な1人にしぼる。</p></div>
+        <div class="step"><span class="step-num">3</span><p>10分で20個の解決案を出す。変な案も出してよい。</p></div>
+        <div class="step"><span class="step-num">4</span><p>困り度、頻度、試しやすさで点数をつけ、1つ選ぶ。</p></div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>困り度</h3>
+          <p>本当に困っているか。</p>
+        </div>
+        <div class="card">
+          <h3>頻度</h3>
+          <p>何度も起きるか。</p>
+        </div>
+        <div class="card">
+          <h3>試しやすさ</h3>
+          <p>明日小さく試せるか。</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h3>親の関わり</h3>
+        <p>「もっとすごい案にしよう」ではなく、「誰が一番困っている？」「今はどうしている？」に戻します。</p>
+      </div>
+
+      <div class="footer-note">Day3の合言葉: 良いアイデアは、誰に、どんな価値を、どう届けるかが見える。</div>
+    </section>
+
+    <section class="page day4">
+      <div class="page-number">5 / 6</div>
+      <div class="eyebrow">Day 4</div>
+      <h1>PMFと小さな実験</h1>
+      <p class="lead">PMFは、作ったものと欲しい人の気持ちがピタッとはまること。完璧に作る前に、小さく試します。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>目的</h2>
+          <p>作りたいものではなく、相手が本当に欲しいものになっているか確認する。</p>
+          <span class="question">問い: 無料なら使う人は、本当に欲しい人？</span>
+        </div>
+        <div class="card">
+          <h2>成果物</h2>
+          <p>小さな実験計画を1つ作る。</p>
+        </div>
+      </div>
+
+      <div class="section-title red">
+        <span class="bar"></span>
+        <h2>PMF信号で見る</h2>
+      </div>
+      <div class="signal-grid">
+        <div class="signal blue-box">
+          <h3>青信号</h3>
+          <ul>
+            <li>自分から使いたがる</li>
+            <li>友達にすすめる</li>
+            <li>2回目も使う</li>
+          </ul>
+        </div>
+        <div class="signal yellow-box">
+          <h3>黄信号</h3>
+          <ul>
+            <li>面白いけど続かなそう</li>
+            <li>説明すれば反応する</li>
+            <li>今は困っていない</li>
+          </ul>
+        </div>
+        <div class="signal red-box">
+          <h3>赤信号</h3>
+          <ul>
+            <li>反応が薄い</li>
+            <li>今の方法で満足</li>
+            <li>誰の問題かぼんやり</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <span class="bar"></span>
+        <h2>やり方</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>紙の説明、LINE、1回だけのお試しなど、作り込まない方法を選ぶ。</p></div>
+        <div class="step"><span class="step-num">2</span><p>誰に試してもらうかを決める。</p></div>
+        <div class="step"><span class="step-num">3</span><p>使ったか、もう一度使いたいか、どこで止まったかを観察する。</p></div>
+      </div>
+
+      <div class="callout success">
+        <h3>親の関わり</h3>
+        <p>赤信号を失敗扱いしません。「この方向ではないとわかった学び」として、次に直すところを一緒に考えます。</p>
+      </div>
+
+      <div class="footer-note">Day4の合言葉: 完璧に考えるより、小さく試して反応を見る。</div>
+    </section>
+
+    <section class="page day5">
+      <div class="page-number">6 / 6</div>
+      <div class="eyebrow">Day 5</div>
+      <h1>3分ピッチとセミナー準備</h1>
+      <p class="lead">起業セミナーに参加する前に、自分たちの視点を持ち、誰のどんな問題をどう解くのかを3分で説明します。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>目的</h2>
+          <p>ただ話を聞くだけではなく、セミナーで見るポイントを持って参加する。</p>
+          <span class="question">問い: セミナーで発表するなら、何を一番伝える？</span>
+        </div>
+        <div class="card">
+          <h2>成果物</h2>
+          <p>3分ピッチ原稿と、セミナーで聞きたい質問メモ。</p>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <span class="bar"></span>
+        <h2>ピッチの型</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>僕たちが見つけた問題は、______ です。</p></div>
+        <div class="step"><span class="step-num">2</span><p>困っている人は、______ です。</p></div>
+        <div class="step"><span class="step-num">3</span><p>今は ______ で解決していますが、______ という不満があります。</p></div>
+        <div class="step"><span class="step-num">4</span><p>そこで僕たちは、______ を考えました。まずは ______ で試します。</p></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>親が見るポイント</h3>
+          <ul class="mini-list">
+            <li>誰の問題か具体的か</li>
+            <li>今の方法の不満があるか</li>
+            <li>小さく試せるか</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>セミナーで見るポイント</h3>
+          <ul class="mini-list">
+            <li>他の人はどんな問題を見つけたか</li>
+            <li>顧客をどう具体的にしたか</li>
+            <li>どう試そうとしているか</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <h3>親の関わり</h3>
+        <p>発表の上手さより、「誰の何を解決するのか」「本当に使いたい人はいるか」「まず何を試すか」を質問します。</p>
+      </div>
+
+      <div class="footer-note">Day5の合言葉: すごさより、誰のどんな問題をどう解くかが伝わること。</div>
+    </section>
+  </main>
+</body>
+</html>

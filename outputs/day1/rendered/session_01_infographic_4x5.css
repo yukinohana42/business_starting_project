@@ -1,0 +1,437 @@
+body {
+  background: #efe7d7;
+}
+
+.page {
+  width: 1080px;
+  height: 1350px;
+  padding: 56px 58px 54px;
+}
+
+.page::before {
+  width: 20px;
+}
+
+.page::after {
+  right: -180px;
+  bottom: -180px;
+  width: 460px;
+  height: 360px;
+}
+
+.topline {
+  margin-bottom: 36px;
+}
+
+.label,
+.page-count {
+  font-size: 20px;
+}
+
+.label {
+  padding: 10px 16px;
+}
+
+.kicker {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+h1,
+.page-01 h1 {
+  font-size: 58px;
+  line-height: 1.2;
+}
+
+.lead {
+  margin-top: 22px;
+  font-size: 30px;
+  line-height: 1.48;
+}
+
+.intro-layout,
+.two-column,
+.summary-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.goal-card,
+.final-card {
+  border-radius: 28px;
+  padding: 30px;
+}
+
+.goal-card p {
+  font-size: 26px;
+  line-height: 1.55;
+}
+
+.goal-sentence {
+  margin-top: 18px;
+  padding: 20px 22px;
+  border-radius: 20px;
+  font-size: 28px;
+}
+
+.small-title {
+  font-size: 24px !important;
+}
+
+.three-concepts {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.page-01 .three-concepts {
+  grid-template-columns: 1fr 34px 1fr 34px 1fr;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.concept-card {
+  min-height: 128px;
+  border-radius: 26px;
+  padding: 24px 28px;
+}
+
+.page-01 .concept-card {
+  min-height: 142px;
+  padding: 20px 22px;
+}
+
+.concept-card span {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  font-size: 23px;
+}
+
+.page-01 .concept-card span {
+  font-size: 21px;
+  padding: 7px 14px;
+}
+
+.concept-card p {
+  font-size: 29px;
+}
+
+.page-01 .concept-card p {
+  font-size: 23px;
+}
+
+.connector {
+  width: 8px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+.page-01 .connector {
+  width: 28px;
+  height: 6px;
+  margin: auto;
+}
+
+.connector::after {
+  right: 50%;
+  top: auto;
+  bottom: -18px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 24px solid var(--navy);
+  border-bottom: 0;
+  transform: translateX(50%);
+}
+
+.page-01 .connector::after {
+  right: -2px;
+  top: 50%;
+  bottom: auto;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid var(--navy);
+  border-right: 0;
+  transform: translateY(-50%);
+}
+
+.bottom-note {
+  margin-top: 24px;
+  font-size: 28px;
+}
+
+.person-diagram {
+  grid-template-columns: 1fr 80px 1fr;
+}
+
+.person-card {
+  min-height: 232px;
+  border-radius: 26px;
+  padding: 24px;
+}
+
+.face {
+  width: 104px;
+  height: 104px;
+  border-width: 6px;
+  margin: 4px auto 20px;
+}
+
+.face::before,
+.face::after {
+  top: 34px;
+  width: 13px;
+  height: 13px;
+}
+
+.face::before { left: 26px; }
+.face::after { right: 26px; }
+
+.person-card p {
+  font-size: 24px;
+}
+
+.big-arrow {
+  width: 58px;
+}
+
+.change-row {
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.change-card {
+  padding: 20px 24px;
+  border-radius: 22px;
+  font-size: 30px;
+}
+
+.question-box {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border-radius: 22px;
+  font-size: 27px;
+}
+
+.center-title {
+  text-align: left;
+}
+
+.flow-diagram {
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.flow-card {
+  min-height: 164px;
+  border-radius: 26px;
+  padding: 24px 26px;
+  text-align: left;
+}
+
+.flow-card span {
+  width: 42px;
+  height: 42px;
+  margin: 0 16px 0 0;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.flow-card b {
+  display: inline-block;
+  margin: 0;
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.flow-card p {
+  margin-top: 14px;
+  font-size: 24px;
+}
+
+.wide-arrow {
+  width: 8px;
+  height: 34px;
+}
+
+.wide-arrow::after {
+  right: 50%;
+  top: auto;
+  bottom: -18px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 24px solid var(--navy);
+  border-bottom: 0;
+  transform: translateX(50%);
+}
+
+.value-cards {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.value-card {
+  min-height: 190px;
+  border-radius: 26px;
+  padding: 24px 28px;
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  grid-template-areas:
+    "before arrow after"
+    "small small small";
+  align-items: center;
+  gap: 12px;
+}
+
+.before-word {
+  grid-area: before;
+}
+
+.after-word {
+  grid-area: after;
+}
+
+.before-word,
+.after-word {
+  font-size: 38px;
+}
+
+.mini-arrow {
+  grid-area: arrow;
+  width: 52px;
+  margin: 0 auto;
+}
+
+.value-card small {
+  grid-area: small;
+  margin-top: 8px;
+  font-size: 23px;
+}
+
+.example-grid {
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.example-card {
+  min-height: 112px;
+  display: grid;
+  grid-template-columns: 72px 210px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: 24px;
+}
+
+.simple-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+}
+
+.simple-icon.video::after {
+  left: 24px;
+  top: 18px;
+  border-top-width: 13px;
+  border-bottom-width: 13px;
+  border-left-width: 20px;
+}
+
+.simple-icon.shop::before {
+  left: 11px;
+  top: 14px;
+  width: 38px;
+}
+
+.simple-icon.shop::after {
+  left: 15px;
+  bottom: 11px;
+  width: 32px;
+  height: 26px;
+}
+
+.simple-icon.bowl::before {
+  left: 12px;
+  bottom: 15px;
+  width: 38px;
+  height: 20px;
+}
+
+.simple-icon.notebook::before {
+  left: 18px;
+  top: 12px;
+  width: 28px;
+  height: 42px;
+}
+
+.simple-icon.phone::before {
+  left: 19px;
+  top: 9px;
+  width: 26px;
+  height: 48px;
+}
+
+.example-card b {
+  margin: 0;
+  font-size: 27px;
+}
+
+.example-card p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.summary-list {
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.summary-list div {
+  grid-template-columns: 142px 1fr;
+  padding: 22px 24px;
+  border-radius: 22px;
+}
+
+.summary-list b {
+  min-height: 58px;
+  border-radius: 18px;
+  font-size: 26px;
+}
+
+.summary-list span {
+  font-size: 27px;
+}
+
+.final-card {
+  min-height: 410px;
+}
+
+.final-card p {
+  margin: 12px 0;
+  font-size: 31px;
+}
+
+.blank-line {
+  height: 48px;
+  border-bottom-width: 4px;
+}
+
+.final-change {
+  margin-top: 28px;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 22px 24px;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 27px;
+}
+
+.down-arrow {
+  border-left-width: 18px;
+  border-right-width: 18px;
+  border-top-width: 28px;
+}
