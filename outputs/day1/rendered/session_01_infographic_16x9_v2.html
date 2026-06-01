@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第1回 Zoom説明用インフォグラフィック 16:9 v2</title>
+  <link rel="stylesheet" href="./session_01_infographic_16x9.css">
+  <link rel="stylesheet" href="./session_01_infographic_16x9_v2.css">
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const page = new URLSearchParams(window.location.search).get("page");
+      if (!page) return;
+      document.body.classList.add("capture-mode");
+      document.querySelectorAll(".page").forEach((section) => {
+        if (section.dataset.page !== page) section.remove();
+      });
+    });
+  </script>
+</head>
+<body>
+  <main class="deck deck-v2" aria-label="第1回 Zoom説明用インフォグラフィック 16:9 v2">
+    <section class="page page-v2 page-01 page-01-v2" data-page="1">
+      <div class="topline">
+        <div class="label">第1回 / 今日のミッション</div>
+        <div class="page-count">01 / 06</div>
+      </div>
+      <div class="mission-hero">
+        <div class="mission-copy">
+          <p class="kicker">Value Detective</p>
+          <h1>お金と仕事の<br>正体を見破れ</h1>
+          <p class="lead">今日は、仕事を「相手がどう変わるか」で見てみよう。</p>
+          <div class="mission-card large">
+            <span>今日のゴール</span>
+            <strong>仕事とは、＿＿を＿＿に変えること。</strong>
+          </div>
+        </div>
+        <div class="detective-board" aria-label="価値探偵ユウと探偵ノート">
+          <div class="character-card yuu">
+            <div class="character-head curious"></div>
+            <div class="character-body"></div>
+            <p class="character-name">価値探偵ユウ</p>
+            <div class="speech-bubble">相手がどう変わるかを見てみよう。</div>
+          </div>
+          <div class="detective-note">
+            <p class="note-title">探偵ノート</p>
+            <div class="note-row"><span>仕事</span><b>誰かを少し良くする</b></div>
+            <div class="note-row"><span>お金</span><b>ありがとうの形</b></div>
+            <div class="note-row"><span>価値</span><b>相手の変化</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page page-v2 page-02 page-02-v2" data-page="2">
+      <div class="topline">
+        <div class="label">仕事って何？</div>
+        <div class="page-count">02 / 06</div>
+      </div>
+      <div class="before-after-layout">
+        <div class="title-block">
+          <p class="kicker">困った顔を助かった顔に変える</p>
+          <h1>仕事は、誰かの状態を<br>少し良くすること。</h1>
+          <p class="lead">「困った」「面倒」「退屈」を、少し良い状態に変えること。</p>
+          <div class="question-box">問い: 最近「面倒がラクになった」ことはある？</div>
+        </div>
+        <div class="big-before-after" aria-label="困った顔から助かった顔へのBefore After">
+          <div class="state-panel before">
+            <span class="state-label">Before</span>
+            <div class="character-head worried"></div>
+            <p>困っている</p>
+          </div>
+          <div class="mission-arrow"></div>
+          <div class="state-panel after">
+            <span class="state-label">After</span>
+            <div class="character-head relieved"></div>
+            <p>少し助かった</p>
+          </div>
+          <div class="speech-bubble side">誰が助かった？</div>
+        </div>
+      </div>
+      <div class="change-row compact">
+        <div class="change-card"><span>困った</span><b>助かった</b></div>
+        <div class="change-card"><span>面倒</span><b>ラク</b></div>
+        <div class="change-card"><span>退屈</span><b>楽しい</b></div>
+      </div>
+    </section>
+
+    <section class="page page-v2 page-03 page-03-v2" data-page="3">
+      <div class="topline">
+        <div class="label">お金って何？</div>
+        <div class="page-count">03 / 06</div>
+      </div>
+      <div class="center-title">
+        <p class="kicker">ありがとうの正体を見つける</p>
+        <h1>お金は「ありがとう」が<br>見える形。</h1>
+        <p class="lead">誰かの状態が少し良くなったとき、価値が届いたサインとして見る。</p>
+      </div>
+      <div class="thanks-layout">
+        <div class="character-card helper">
+          <div class="character-head relieved"></div>
+          <p class="character-name">助かった人</p>
+          <div class="speech-bubble">ありがとう。</div>
+        </div>
+        <div class="flow-diagram money-flow v2" aria-label="価値が届く、ありがとう、お金の流れ">
+          <div class="flow-card blue">
+            <span>1</span>
+            <b>価値が届く</b>
+            <p>相手の状態が<br>少し良くなる</p>
+          </div>
+          <div class="wide-arrow"></div>
+          <div class="flow-card coral">
+            <span>2</span>
+            <b>ありがとう</b>
+            <p>助かった気持ちが<br>生まれる</p>
+          </div>
+          <div class="wide-arrow"></div>
+          <div class="flow-card yellow">
+            <span>3</span>
+            <b>お金</b>
+            <p>ありがとうが<br>見える形になる</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page page-v2 page-04 page-04-v2" data-page="4">
+      <div class="topline">
+        <div class="label">価値って何？</div>
+        <div class="page-count">04 / 06</div>
+      </div>
+      <div class="card-work-layout">
+        <div class="title-block">
+          <p class="kicker">変化カードを完成させる</p>
+          <h1>価値は、相手の変化で見る。</h1>
+          <p class="lead">すごそうかどうかより、使ったあとに何が変わったか。</p>
+          <div class="duo">
+            <div class="mini-character">
+              <div class="character-head curious"></div>
+              <span>ユウ</span>
+            </div>
+            <div class="mini-character sora">
+              <div class="character-head focused"></div>
+              <span>ソラ</span>
+            </div>
+          </div>
+        </div>
+        <div class="value-table" aria-label="価値変換カード">
+          <div class="speech-bubble top">すごそうより、変わったかを見る。</div>
+          <div class="value-card green">
+            <p class="before-word">困った</p>
+            <div class="mini-arrow"></div>
+            <p class="after-word">助かった</p>
+            <small>問題が軽くなる</small>
+          </div>
+          <div class="value-card blue">
+            <p class="before-word">わからない</p>
+            <div class="mini-arrow"></div>
+            <p class="after-word">できそう</p>
+            <small>動き出せる</small>
+          </div>
+          <div class="value-card yellow">
+            <p class="before-word">退屈</p>
+            <div class="mini-arrow"></div>
+            <p class="after-word">楽しい</p>
+            <small>気持ちが動く</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page page-v2 page-05 page-05-v2" data-page="5">
+      <div class="topline">
+        <div class="label">ビジネス探偵ミッション</div>
+        <div class="page-count">05 / 06</div>
+      </div>
+      <div class="title-block wide">
+        <p class="kicker">身近な仕事を観察する</p>
+        <h1>この仕事は、誰をどう変えている？</h1>
+        <p class="lead">何を売っているかより、相手がどう変わるか。</p>
+      </div>
+      <div class="detective-mission-layout">
+        <div class="detective-note large-note">
+          <p class="note-title">ビジネス探偵ノート</p>
+          <div class="note-prompt">誰が、どう変わる？</div>
+          <div class="speech-bubble">何を売るかより、どう変わるか。</div>
+        </div>
+        <div class="business-cards three">
+          <div class="business-card">
+            <div class="simple-icon shop"></div>
+            <b>コンビニ</b>
+            <p><span>急いでいる人</span><strong>すぐ買えて助かる</strong></p>
+          </div>
+          <div class="business-card">
+            <div class="simple-icon notebook"></div>
+            <b>塾 / 学習サポート</b>
+            <p><span>わからない人</span><strong>できそうになる</strong></p>
+          </div>
+          <div class="business-card">
+            <div class="simple-icon phone"></div>
+            <b>スマホゲーム</b>
+            <p><span>退屈な時間</span><strong>楽しい時間になる</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page page-v2 page-06 page-06-v2" data-page="6">
+      <div class="topline">
+        <div class="label">Final Mission</div>
+        <div class="page-count">06 / 06</div>
+      </div>
+      <div class="final-layout-v2">
+        <div class="final-copy">
+          <p class="kicker">今日の学びを1文にする</p>
+          <h1>仕事の正体を、<br>自分の言葉で言え。</h1>
+          <p class="lead">成功・失敗ではなく、今日見つけた「相手の変化」を言葉にする。</p>
+          <div class="speech-bubble">きれいな答えじゃなくてOK。</div>
+        </div>
+        <div class="final-card mission-final-card">
+          <p class="small-title">Final Mission</p>
+          <p>仕事とは、</p>
+          <div class="blank-line"></div>
+          <p>を</p>
+          <div class="blank-line"></div>
+          <p>に変えること。</p>
+        </div>
+        <div class="navigator-card">
+          <div class="character-head calm"></div>
+          <p class="character-name">ミホ</p>
+          <span>「誰がどう変わる？」に戻ろう。</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
