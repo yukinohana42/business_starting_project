@@ -15,6 +15,26 @@
 参照するファイル:
 
 - `SOURCE_OF_TRUTH.md`
+- `docs/parent_material_design_principles_v2.md`
+- `docs/global_visual_acceptance_criteria.md`
 - `docs/parent_briefing.md`
 - `docs/safety_and_tone_guidelines.md`
+
+## v2追加条件
+
+親向け資料は、子供向けゲームUIをそのまま使わないでください。
+
+最初に、資料を次のどれかとして分類してください。
+
+- Facilitator Guide
+- Parent Briefing
+- Question Card
+- OK/NG Response Sheet
+- Observation Log
+- Safety Boundary Card
+- Reflection Support Sheet
+- Praise Guide
+- Session Flow Map
+
+親を先生、採点者、ゲームマスターとして描かないでください。親がその場で使える問い、OK/NG声かけ、安全境界、褒め方を入れてください。
 

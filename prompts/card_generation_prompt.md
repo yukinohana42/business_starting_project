@@ -24,5 +24,20 @@
 
 - `SOURCE_OF_TRUTH.md`
 - `DESIGN.md`
+- `docs/visual_learning_system_v2.md`
+- `docs/global_visual_acceptance_criteria.md`
 - `cards/printable_cards_index.md`
+
+## v2追加条件
+
+カードは説明カードではなく、子供が選ぶ、並べる、書き込む、比較する、話すための道具です。
+
+必ず、各カードに次を入れてください。
+
+- カードが進める行動
+- 子供が書く/選ぶ/話す内容
+- 親が使える問い
+- 報酬や採点に見えない注意
+
+1カード1行動にしてください。イラストやカード名だけで機能しないカードは禁止です。
 

@@ -13,6 +13,10 @@
 - ワークの時間が足りているか
 - 次に試すことが明確か
 - 起業を押し付ける表現になっていないか
+- 子供向け資料が説明スライドに戻っていないか
+- キャラクターが行動しているか
+- ゲーム要素が学習行動と結びついているか
+- 親が採点者やゲームマスターになっていないか
 
 出力形式:
 
@@ -21,4 +25,10 @@
 3. 具体的な言い換え
 4. 次回の進行変更
 5. `TODO.md` に追記するタスク案
+
+参照:
+
+- `docs/visual_learning_system_v2.md`
+- `docs/global_visual_acceptance_criteria.md`
+- `docs/parent_material_design_principles_v2.md`
 

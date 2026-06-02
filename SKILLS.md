@@ -50,3 +50,28 @@
 
 Zoomで読める文字量と、親が見ても安心できる表現を重視します。
 
+## visual-learning-system-designer
+
+子供向け資料を、説明スライドではなく発見ゲーム型の学習体験として設計するときに使います。
+
+必ず `docs/visual_learning_system_v2.md`、`docs/global_visual_acceptance_criteria.md`、`docs/session_visual_design_map_v2.md` を参照します。
+
+主な仕事:
+
+- 各ページの画面タイプを Mission Board / Case File / Card Table / Experiment Lab などに分類する。
+- キャラクターが何をしているかをページごとに決める。
+- ゲーム要素がどの学習行動を進めるかを決める。
+- 丸アイコンだけ、ゲーム用語だけ、カードを並べただけの資料を不合格にする。
+
+## parent-material-designer-v2
+
+親向け資料を、落ち着いたが実用的なFacilitator Guideとして設計するときに使います。
+
+必ず `docs/parent_material_design_principles_v2.md` を参照します。
+
+主な仕事:
+
+- 親を先生、採点者、ゲームマスターとして描かない。
+- Question Card、OK/NG Response Sheet、Safety Boundary Card、Praise Guideを入れる。
+- 結果ではなく、観察、問い、試したこと、改善を支える資料にする。
+

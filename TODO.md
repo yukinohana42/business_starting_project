@@ -2,30 +2,27 @@
 
 ## Priority 1
 
-- GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-gamified-visual-v1/` の内容を最終確認する
+- GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-visual-system-v2/` の内容を最終確認する
 - PR `docs/gamified-visual-foundation-v1` を作成し、docs中心・PNG再生成なし・既存IP模倣なしを明記する
-- Day1インフォグラフィックv2方針を確認する
-- 16:9 v2 contact sheetを人間確認する
-- 16:9 v2がOKなら4:5版へ展開する
-- v2構成を台本・カード・ワークシートへ反映する
-- 最後に固定情報源を更新する
-- 再生成後、Zoom表示とスマホ表示を確認する
-- Page 1を「今日のミッション」化
-- Page 5を「ビジネス探偵ミッション」化
-- Page 6を「Final Mission」化
-- 同世代オリジナルキャラクターとBefore/After表現を入れる
+- Day1 v2 PNG/contact sheetは採用版にしない前提で人間確認する
+- Day1 v3制作前に `outputs/day1/session_01_infographic_v3_design_brief.md` と `session_01_infographic_v3_storyboard.md` を人間確認する
+- Day1 v3のHTML/CSS/PNG生成前に、キャラクター行動・ゲーム要素・子供の行動・相手の変化・合格基準表を確認する
+- Day2以降のvisual design briefを人間確認する
+- 親向け資料は `docs/parent_material_design_principles_v2.md` に沿って再設計する
+- 合格後にDay1 v3 HTML/CSSへ進む
+- Day1 v3確認後に4:5版へ展開する
 
 ## Priority 2
 
-- Day1台本にキャラクター・ミッション進行を反映
-- Day1カードをミッションカード・価値探偵カード化
-- 親向け説明に「ゲーミフィケーションは報酬で釣るものではない」と追記
+- v3構成をDay1台本、カード、ワークシートへ反映
+- Day2 Problem HunterのMission Board / Observation Map案を作る
+- 全体クエストマップ、Discovery Stamp、Learning Badgeを学びの行動記録として設計する
 
 ## Priority 3
 
 - PR merge後に `docs/current_git_status.md` と固定情報源のHEAD情報を更新
-- Day2以降のミッション設計
-- 全体クエストマップ作成
+- Day2以降のHTML/CSS/PNG生成
+- 親向け説明資料、カード、ワークシートのv2合格基準レビュー
 - バッジ・スタンプ・進捗表のデザイン統一
 
 ## 既存の改善候補

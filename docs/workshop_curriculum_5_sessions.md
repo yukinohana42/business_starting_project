@@ -52,3 +52,17 @@
 
 ワーク: 3分ピッチを作り、親が審査員として質問する。
 
+## v2追加: 視覚教材化の共通方針
+
+各回を資料化するときは、普通の説明スライドにしない。`docs/session_visual_design_map_v2.md` に沿って、各回を発見ゲーム型の教材画面にする。
+
+- Day1: Detective Mission / Case File / Value Change Card
+- Day2: Problem Hunt / Daily Observation Map / Question Card
+- Day3: Idea Workshop / Card Table / Customer-Problem-Solution Board
+- Day4: Mini Experiment Lab / Signal Board / Reaction Log
+- Day5: Pitch Stage / Story Board / Listener Memo
+
+各回で、キャラクター行動、ゲーム要素、子供の行動、相手の変化を定義してから制作する。
+
+注: Day5の親は「審査員」ではなく、問いを出す聞き手・伴走者として扱う。
+

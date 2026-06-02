@@ -21,5 +21,22 @@
 
 - `SOURCE_OF_TRUTH.md`
 - `DESIGN.md`
+- `docs/visual_learning_system_v2.md`
+- `docs/global_visual_acceptance_criteria.md`
 - 対象セッションの `worksheet.md`
+
+## v2追加条件
+
+ワークシートは正解欄ではなく、観察ログ、カード記録、実験ログ、Final Mission Sheetとして設計してください。
+
+必ず入れること:
+
+- 誰が
+- Before
+- After
+- 何を見つけたか
+- 次に小さく試すこと
+- 自分の言葉で書くFinal Mission
+
+親が採点する形式、正解を埋める形式、説明を読むだけの形式は禁止です。
 

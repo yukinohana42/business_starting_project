@@ -57,3 +57,22 @@
 - 次に直すことがあれば [TODO.md](TODO.md) に書いたか
 - docs-only commitに、教材生成物、画像生成物、PDF、PPTX、ブラウザプロファイルが混ざっていないか
 
+## Visual Learning System v2
+
+子供向けのスライド、インフォグラフィック、カード、ワークシートを作る前に、必ず次を読む。
+
+- `docs/visual_learning_system_v2.md`
+- `docs/global_visual_acceptance_criteria.md`
+- `docs/session_visual_design_map_v2.md`
+
+HTML/CSS、PNG、PDF、PPTX、A4印刷レイアウトへ進む前の停止条件:
+
+- キャラクターの行動がページごとに定義されていない。
+- ゲーム要素がページごとに定義されていない。
+- 子供がその画面で何をするかが定義されていない。
+- 親向け資料で親が採点者またはゲームマスターになっている。
+- 単なる「見出し＋本文＋カード」の説明資料になっている。
+- 丸アイコン、顔だけ、名前ラベルだけのキャラクターになっている。
+
+この条件を満たさない場合は、生成を止め、設計修正案を出す。
+

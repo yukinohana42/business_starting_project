@@ -21,3 +21,15 @@ Update only documentation and fixed-context files so the next ChatGPT/Codex sess
 - Updated prompt index if new prompts are added.
 - A docs-only commit.
 - A pushed documentation branch, not an automatic merge to `main`.
+
+## Visual System v2 Note
+
+If the project has added or changed visual learning system rules, include these in the fixed context:
+
+- `docs/visual_mismatch_root_cause_report.md`
+- `docs/visual_learning_system_v2.md`
+- `docs/global_visual_acceptance_criteria.md`
+- `docs/session_visual_design_map_v2.md`
+- `docs/parent_material_design_principles_v2.md`
+
+Do not copy PNG, HTML, CSS, browser profiles, cache, Cookie, Login Data, `.env`, or secrets into the fixed context. Record asset paths and status in Markdown only.

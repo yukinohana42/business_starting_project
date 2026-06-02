@@ -15,11 +15,13 @@ Improve the Day1 package so a parent can run a 45-minute Zoom session smoothly w
 ## Direction
 
 - Make Day1 feel like a discovery game.
+- Use `docs/visual_learning_system_v2.md`, `docs/global_visual_acceptance_criteria.md`, and `docs/session_visual_design_map_v2.md`.
 - Use concrete examples from school, friends, family, games, smartphones, clubs, tests, and shops.
 - Show value as a change in another person.
 - Keep parent speech short and move students into thinking, choosing, writing, and explaining.
 - Do not push entrepreneurship as the only correct path.
 - Do not imitate existing manga, anime, game characters, logos, or proprietary art styles.
+- Do not proceed to HTML/CSS or PNG unless character actions, game elements, learner actions, and acceptance criteria are defined per page.
 
 ## Expected Output
 
