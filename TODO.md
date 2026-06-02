@@ -8,6 +8,14 @@
 - v3構成が確定してから、台本・カード・ワークシートへ反映する。
 - 最後に固定情報源をMarkdown中心で更新する。PNG/HTML/CSS本体は固定情報源フォルダへコピーしない。
 
+## Current Next Task: Image-First Visual Workflow
+
+- `docs/image_first_visual_production_workflow.md` と `docs/global_visual_system_spec.md` を人間確認する。
+- Day1 pilotとして、まずPage 1 Mission Boardだけ画像生成を小さく試すか判断する。
+- pilot生成する場合は `outputs/day1/prompts/day1_visual_anchor_prompt.md`、`day1_character_prompt.md`、`day1_page_prompts.md` を使う。
+- 生成後はcontact sheetではなく、まず1枚レビューで発見ゲーム型画面に見えるか確認する。
+- OKならDay1残り5ページへ進む。NGならpromptと画面タイプ定義に戻る。
+
 ## Priority 1
 
 - GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-visual-system-v2/` の内容を最終確認する

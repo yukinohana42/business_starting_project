@@ -148,3 +148,28 @@ HTML/CSSで作る場合も、丸い顔アイコンだけでは不合格です。
 - 子供または親がその画面でする行動。
 - Before/Afterまたは学びの変化。
 - 合格基準表。
+
+## Image-First Production Addendum
+
+今後の子供向けビジュアル教材は、HTML/CSSだけで絵を完成させることを標準にしません。
+
+標準は、画像生成または専用イラスト素材で「場面、キャラクター行動、手元、小物、相手の変化」を作り、その後でHTML/CSSやレイアウトツールを使って正確な日本語本文、空欄、カード文言、ページ番号、16:9/4:5/A4書き出しを補います。
+
+制作前に必ず読む:
+
+- `docs/image_first_visual_workflow_analysis.md`
+- `docs/image_first_visual_production_workflow.md`
+- `docs/global_visual_system_spec.md`
+
+画像生成promptに入れる必須項目:
+
+- page type
+- character action
+- game element function
+- learner action
+- visible change
+- props and hand action
+- text overlay area
+- negative prompt
+
+HTML/CSSは主役のビジュアル生成手段ではなく、文字載せ、構図補正、フォーマット展開、contact sheet作成の補助として扱います。
