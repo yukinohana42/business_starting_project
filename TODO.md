@@ -16,6 +16,18 @@
 - 生成後はcontact sheetではなく、まず1枚レビューで発見ゲーム型画面に見えるか確認する。
 - OKならDay1残り5ページへ進む。NGならpromptと画面タイプ定義に戻る。
 
+## Current Next Task: Day1 Image Review And Refinement
+
+- Day1 Page 1 direction sampleを基準にする。
+- ただしfinal化にはvisual review and refinementが必要。
+- Page 2 final prompt `outputs/day1/prompts/day1_page_02_image_generation_prompt_final.md` を人間確認する。
+- Page 2を1枚だけ画像生成する。
+- candidate画像をレビューする。
+- 意味不明な描写があれば修正プロンプトで再生成する。
+- final判定後に次ページへ進む。
+- Day1 6枚が揃うまでは4:5展開しない。
+- final採用前に後載せ文字範囲を決める。
+
 ## Priority 1
 
 - GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-visual-system-v2/` の内容を最終確認する

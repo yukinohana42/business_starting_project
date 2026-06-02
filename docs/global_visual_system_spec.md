@@ -257,6 +257,30 @@ Use layout after generation for:
 - card copy
 - worksheet fields
 
+## Prop Handling
+
+小物は、学習行動と結びつく場合だけ使う。
+
+Allowed when meaningful:
+
+- magnifying glass held by Yuu or placed clearly on a table
+- pen connected to hand or notebook
+- detective notebook held, open, or placed on the work surface
+- mission card held, pinned, or placed on Mission Board
+- stamp slot placed as a record area, not a reward
+- Quest Map placed as progress context
+
+Disallow:
+
+- floating props
+- duplicated unnecessary props
+- props emerging from face, hair, body, or background
+- props covering eyes, face, hands, or key text areas
+- decorative props that do not support seeing, choosing, writing, talking, comparing, or trying
+- meaningless labels or broken generated Japanese used as final text
+
+Every candidate image must be reviewed for prop meaning before final adoption.
+
 ## Global Negative Prompt
 
 - existing anime, manga, game, mascot, brand, logo, or character resemblance
@@ -282,3 +306,5 @@ Every generated visual must answer:
 5. What change is visible?
 6. Is any text better added after image generation?
 7. Does it avoid entrepreneurship pressure, money hype, competition, and IP imitation?
+8. Are props physically meaningful and connected to the learning action?
+9. Has the candidate passed visual review before being marked final?

@@ -9,6 +9,9 @@ For each page:
 3. Use the page prompt below.
 4. Generate one page at a time.
 5. Add exact Japanese copy later with layout tools.
+6. Save generated images as candidates, not final assets.
+7. Review the candidate with `docs/image_generation_visual_review_checklist.md`.
+8. If needed, revise the prompt and regenerate before final adoption.
 
 Do not generate all six pages in one uncontrolled batch.
 
@@ -18,7 +21,7 @@ Page type: Mission Board.
 
 Scene: Yuu stands beside a warm wooden mission board. Yuu is writing in a detective notebook while holding or receiving a mission card. The board has a large clean blank area for the Japanese headline and a separate blank Mission Card area. A small Detective Note panel shows blank lines. A Discovery Stamp placeholder is visible but subtle.
 
-Character action: Yuu writes the observation point in the notebook and looks toward the mission card. Hands, pen, notebook, mission card, and magnifying glass must be visible.
+Character action: Yuu writes the observation point in the notebook and looks toward the mission card. Hands, pen, notebook, and mission card must be visible. The magnifying glass is optional and should appear only if it is clearly held by Yuu or placed naturally on the table.
 
 Game elements: Mission Card, Detective Note, Discovery Stamp slot, simple Quest Map area.
 
@@ -28,7 +31,7 @@ Visible change: A small strip or pair of cards suggests "work as getting money?"
 
 Text handling: Leave space for the main copy "お金と仕事の正体を見破れ。" and final sentence "仕事とは、＿＿を＿＿に変えること。"
 
-Negative prompt additions: no cash piles, no rich lifestyle, no winner badge, no face-only Yuu.
+Negative prompt additions: no cash piles, no rich lifestyle, no winner badge, no face-only Yuu, no floating magnifying glass, no duplicate props, no props emerging from face or body.
 
 ## Page 2: Case File - Work
 
@@ -135,3 +138,6 @@ For each generated page, check:
 - Is the value or learning change visible?
 - Is the image not overloaded with text?
 - Is it safe: no pressure, no money hype, no competition, no IP mimicry?
+- Are props physically meaningful and connected to hands, table, board, or notebook?
+- Are any generated Japanese characters broken and therefore better replaced by overlay text?
+- Is this still a candidate, with final naming reserved for reviewed assets only?

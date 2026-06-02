@@ -37,7 +37,8 @@ assets/generated/
   day1/
     page_01/
       candidates/
-      selected/
+      final/
+      rejected/
   day2/
   day3/
   day4/
@@ -205,12 +206,15 @@ reviews/image_generation/day1/day1_page_01_review_v001.md
 2. Run dry-run manifest check.
 3. Generate one pilot page.
 4. Human reviews the page.
-5. If accepted, generate remaining pages one by one.
-6. Build contact sheet.
-7. Review against global acceptance criteria.
-8. Overlay exact Japanese text and UI.
-9. Export 16:9.
-10. Only after approval, adapt to 4:5 and A4.
+5. If defects are found, create a correction prompt and regenerate or edit.
+6. Re-review the revised candidate.
+7. Move only approved assets to `final`.
+8. If accepted, generate remaining pages one by one.
+9. Build contact sheet.
+10. Review against global acceptance criteria.
+11. Overlay exact Japanese text and UI.
+12. Export 16:9.
+13. Only after approval, adapt to 4:5 and A4.
 
 ## Common Failure Prevention
 
@@ -220,6 +224,8 @@ reviews/image_generation/day1/day1_page_01_review_v001.md
 | Character inconsistency | Use anchor and character prompt every time |
 | Page becomes poster | Require page type and learner action |
 | Game element becomes decoration | Define the learning action for each game element |
+| Confusing props | Require prop-to-action review before final |
+| First image treated as final | Store initial outputs as candidates only |
 | Money hype | Negative prompt bans cash piles and luxury imagery |
 | Existing IP resemblance | Negative prompt bans IP/style imitation; human review checks it |
 | Parent becomes judge | Parent prompts must say facilitator, not judge |

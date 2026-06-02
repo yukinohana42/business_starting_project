@@ -20,6 +20,8 @@ Visual cues:
 
 Do not make Yuu a face icon. Show hands, body, props, and action.
 
+Prop rule for Yuu: the magnifying glass is optional. Use it only when Yuu clearly holds it or when it rests naturally on a table. Do not place it floating near the face or emerging from the body. The pen must connect to the hand or notebook. Mission cards and notebooks must support the learning action.
+
 ## Sora / Idea Builder
 
 Sora is an original Japanese junior high school grade 8 student. Sora likes turning ideas into cards, sketches, and small experiments. Sora's role is to build, arrange, and test. Sora uses sticky notes, value change cards, sketch paper, and simple prototype cards. Sora should look age-appropriate, friendly, and practical.
@@ -66,3 +68,6 @@ Do not make Miho a judge, scorer, game master, or teacher giving answers.
 - angry teacher expression
 - face-only icon
 - floating head
+- floating magnifying glass
+- duplicated pens, cards, notebooks, or stamps
+- props in meaningless positions

@@ -173,3 +173,5 @@ HTML/CSSで作る場合も、丸い顔アイコンだけでは不合格です。
 - negative prompt
 
 HTML/CSSは主役のビジュアル生成手段ではなく、文字載せ、構図補正、フォーマット展開、contact sheet作成の補助として扱います。
+
+生成後には必ず `docs/image_generation_review_and_refinement_workflow.md` と `docs/image_generation_visual_review_checklist.md` に沿ってcandidateを確認します。最初の生成物はfinalではありません。小物の意味不明な位置、手や視線との不一致、文字崩れ、報酬や勝敗に見える要素があれば、修正promptを作るか再生成します。

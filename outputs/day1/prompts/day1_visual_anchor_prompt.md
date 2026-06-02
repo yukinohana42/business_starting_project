@@ -16,9 +16,13 @@ Use fully original characters only. Do not imitate any existing anime, manga, ga
 
 The scene should show character action, hand movements, props, and learning tools. Avoid face-only icons. Avoid characters standing without action.
 
+Generated outputs are candidates, not final assets. Every image must pass visual review before final adoption. The review must check whether props, hands, gaze, posture, game elements, and text areas make educational sense.
+
 Core learning idea: value is seen as a small positive change in another person. Show changes like troubled to helped, confused to able to try, bored to having fun, rushed to relieved. Do not mock the Before state and do not exaggerate the After state.
 
 Game elements are functional learning tools, not decoration. Use Mission Card, Detective Note, Case File, Evidence Card, Value Change Card, Discovery Stamp, Reflection Stamp, Final Mission Sheet, and Question Card only when they support the learner action.
+
+Props must be meaningful and physically connected to the action. A magnifying glass, pen, notebook, card, stamp, or Quest Map should appear only when it helps the learner understand what to see, choose, write, talk about, compare, or try. Avoid floating props, duplicate props, props emerging from the face/body/background, or props covering the face, hands, key cards, or overlay text areas.
 
 Text handling: keep generated text very minimal. Use only short English placeholder labels or simple blank areas when needed. Exact Japanese copy will be added later in layout. Leave clean open areas for overlay text and cards.
 
@@ -40,6 +44,10 @@ Aspect ratio: 16:9 horizontal, designed for 1920x1080 Zoom sharing.
 - crowded infographic poster
 - tiny unreadable text
 - full Japanese paragraphs inside the generated image
+- floating or duplicated learning props
+- magnifying glass, pen, notebook, card, stamp, or map in a meaningless position
+- props overlapping face, eyes, hands, or key text areas
+- broken generated Japanese used as final teaching copy
 
 ## Layout Notes
 
@@ -48,3 +56,4 @@ Aspect ratio: 16:9 horizontal, designed for 1920x1080 Zoom sharing.
 - Keep the main action visible at Zoom size.
 - Use one main scene per page.
 - Keep page-to-page consistency in character appearance and props.
+- Save initial outputs as candidates and review them before final naming.

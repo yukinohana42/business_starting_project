@@ -118,6 +118,10 @@ promptに必ず入れる:
 - 6ページを一気に量産しない。
 - キャラクター一貫性をanchor promptで守る。
 - 生成結果は採用前にreview manifestへ記録する。
+- 最初の生成物は必ず `candidate` として扱い、final扱いしない。
+- candidate -> review -> revise -> final の順に進める。
+- 生成後レビューで意味不明な描写、小物の破綻、文字崩れ、安全性を確認する。
+- finalに残せるのは、レビュー済みで採用理由がMarkdownに記録された画像だけ。
 
 ### 9. Copy Fitting
 
@@ -151,6 +155,14 @@ contact sheetとページ別reviewを作る。
 - safety check
 - text readability check
 - parent role check when parent-facing
+- visual defect check for props, hands, gaze, posture, and broken text
+- final / candidate / rejected separation check
+
+詳しくは以下を参照する。
+
+- `docs/image_generation_review_and_refinement_workflow.md`
+- `docs/image_generation_visual_review_checklist.md`
+- `docs/image_asset_naming_and_review_policy.md`
 
 ### 12. Final Export
 
@@ -248,3 +260,5 @@ scripts/
 ## Stop Before Mass Generation
 
 Day1で1ページだけpilot生成し、方向性が確認できるまで大量生成しない。
+
+pilotが方向性として良くても、final画像ではない。final化には、候補画像の視覚レビュー、必要な修正prompt、再生成または後編集、採用理由の記録が必要。
