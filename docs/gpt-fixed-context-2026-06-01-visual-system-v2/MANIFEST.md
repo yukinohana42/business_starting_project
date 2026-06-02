@@ -60,3 +60,17 @@ The folder intentionally does not contain:
 This context approves planning and review only.
 
 It does not approve Day1 v3 HTML/CSS, Day1 v3 PNG generation, 4:5 expansion, PDF generation, PPTX generation, or script/card/worksheet propagation.
+
+## Current Operational Addenda
+
+The latest operational rule is manual GPT image handoff. Codex prepares prompt packets and reviews returned candidates; the user performs ChatGPT / GPT image generation manually.
+
+Current addenda outside this fixed context:
+
+- `docs/codex_gpt_image_generation_handoff_workflow.md`
+- `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/day1/image_generation/user_handoff_template.md`
+- `outputs/parents/parent_explanation_material_plan.md`
+- `outputs/parents/parent_explanation_prompt_packet_plan.md`
+
+No images, HTML, CSS, PDFs, or PPTX files are copied into this fixed context folder.

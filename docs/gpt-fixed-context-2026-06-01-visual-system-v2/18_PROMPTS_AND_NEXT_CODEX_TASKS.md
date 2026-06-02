@@ -15,6 +15,17 @@ Updated prompt files:
 - `prompts/codex_next_tasks.md`
 - `prompts/codex_freeze_gpt_context_prompt.md`
 
+Manual handoff prompt packet files:
+
+- `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/day1/image_generation/prompt_packets/day1_page_01_prompt_packet_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_page_02_prompt_packet_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_page_03_prompt_packet_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_page_04_prompt_packet_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_page_05_prompt_packet_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_page_06_prompt_packet_for_gpt.md`
+- `outputs/day1/image_generation/user_handoff_template.md`
+
 New prompt files:
 
 - `prompts/global_visual_learning_system_prompt.md`
@@ -33,19 +44,24 @@ Before generating slides, cards, worksheets, or parent materials, require the mo
 - `docs/session_visual_design_map_v2.md`
 - `docs/parent_material_design_principles_v2.md` when parent-facing
 - `docs/visual_mismatch_root_cause_report.md`
+- `docs/codex_gpt_image_generation_handoff_workflow.md`
 
 The model must produce a page-by-page or material-by-material acceptance table before implementation.
 
 If the acceptance table cannot show character action, learning action, and functional game element use, production must stop.
 
+For image-first visuals, create a prompt packet instead of asking Codex to generate images. The user pastes the packet into GPT image generation, saves the output as a candidate, and returns the handoff template to Codex for review.
+
 ## Recommended Next Codex Task
 
-Create Day1 16:9 v3 HTML/CSS only after human approval of:
+Review Day1 manual handoff prompt packets first:
 
-- `outputs/day1/session_01_infographic_v3_design_brief.md`
-- `outputs/day1/session_01_infographic_v3_storyboard.md`
+- `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/day1/image_generation/user_handoff_template.md`
 
-The next implementation request should explicitly say:
+Then the user should generate or place candidates one page at a time. The next Codex task should be candidate review or correction prompt creation, not PNG/PDF/PPTX production.
+
+If a future request resumes HTML/CSS, it should explicitly say:
 
 - create new v3 files only
 - do not overwrite v1 or v2

@@ -53,3 +53,9 @@ Do not create an ordinary explanation slide deck. Create a discovery-game learni
 ## Stop Rule
 
 If the page can be described as a clean explanation slide, stop and redesign it as a learning screen.
+
+## Manual Handoff Rule
+
+If image generation is involved, use manual handoff mode. Create prompt packets that a user can paste into ChatGPT / GPT image generation. Do not assume Codex will generate images or that an OpenAI API key is available.
+
+Each prompt packet must include final prompt, checklist, correction template, candidate save path, and return-to-Codex template.

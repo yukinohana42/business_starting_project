@@ -67,3 +67,26 @@ Next action:
 - Human generates one Page 3 candidate.
 - Candidate is saved as candidate, not final.
 - Candidate is visually reviewed before any final adoption.
+
+## Manual GPT Handoff Update
+
+Day1 image generation now uses prompt packets for manual handoff.
+
+Prompt packet index:
+
+`outputs/day1/image_generation/prompt_packets/README.md`
+
+User handoff template:
+
+`outputs/day1/image_generation/user_handoff_template.md`
+
+Current order:
+
+1. If Page 1 / Page 2 direction images already exist outside the repo, place them as candidates.
+2. If they are not available, regenerate Page 1 and Page 2 from the prompt packets.
+3. Generate Page 3, Page 4, Page 5, and Page 6 one at a time.
+4. Save every first output as `candidate`, never `final`.
+5. Return each candidate to Codex with the handoff template.
+6. Review, revise, and only then consider final adoption.
+
+Codex does not run image generation in this workflow. The user pastes prompt packets into ChatGPT / GPT image generation.

@@ -21,6 +21,27 @@ The key finding is:
 
 Therefore, v2 should not be propagated to scripts, cards, worksheets, 4:5, PDF, or PPTX as the final system.
 
+## 2026-06-02 Manual Handoff Update
+
+The current production direction is manual GPT image handoff, not Codex-run image generation.
+
+Role split:
+
+- Codex creates prompt packets, production plans, review criteria, correction prompts, file paths, candidate/final management, and overlay text plans.
+- The user pastes prompt packets into ChatGPT / GPT image generation.
+- Generated images return to the repo as candidates.
+- Human approval and visual review are required before any final status.
+
+OpenAI API automation is a future optional helper. Lack of an API key must not block prompt packet preparation, manual generation, review, or parent-material planning.
+
+Current handoff docs outside this fixed context:
+
+- `docs/codex_gpt_image_generation_handoff_workflow.md`
+- `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/day1/image_generation/user_handoff_template.md`
+- `outputs/parents/parent_explanation_material_plan.md`
+- `outputs/parents/parent_explanation_prompt_packet_plan.md`
+
 ## Completed in This Visual-System Update
 
 - Added root-cause report for the mismatch between intended direction and v2 PNG result.
@@ -38,6 +59,8 @@ Therefore, v2 should not be propagated to scripts, cards, worksheets, 4:5, PDF, 
 
 Do not create:
 
+- Codex-run image generation
+- GPT image generation on behalf of the user
 - Day1 v3 HTML/CSS
 - Day1 v3 PNGs
 - Day1 v3 contact sheet
@@ -47,6 +70,8 @@ Do not create:
 - PPTX files
 
 Do not update Day1 scripts, cards, or worksheets to v2/v3 until the Day1 v3 visual direction is reviewed.
+
+Do not mark any generated image as final until it has been saved as a candidate, reviewed, revised if needed, and approved by a human.
 
 ## Next Human Review
 
@@ -68,10 +93,13 @@ The review should confirm:
 
 ## Recommended Next Production Order
 
-1. Human review of Day1 v3 design brief and storyboard.
-2. If approved, create Day1 16:9 v3 HTML/CSS only.
-3. Render Day1 16:9 v3 PNGs and contact sheet.
-4. Review the contact sheet against the global criteria.
-5. If approved, expand to 4:5.
-6. Then reflect the accepted v3 structure into facilitator script, cards, and worksheet.
-7. Then update fixed context again.
+1. Human reviews `outputs/day1/image_generation/prompt_packets/README.md`.
+2. User places existing Page1/Page2 direction images as candidates, or regenerates them from the prompt packets.
+3. User generates Page3, Page4, Page5, and Page6 one by one from prompt packets.
+4. Codex reviews returned candidates, or records `human visual review required` if the images are not accessible.
+5. Codex creates correction prompts where needed.
+6. Human approves Day1 16:9 final 6 images.
+7. Create final contact sheet and overlay text plan.
+8. Only then expand to 4:5.
+9. Then reflect the accepted visual structure into facilitator script, cards, and worksheet.
+10. Then proceed to parent explanation material production after human review of `outputs/parents/parent_explanation_material_plan.md`.

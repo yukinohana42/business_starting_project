@@ -262,3 +262,11 @@ scripts/
 Day1で1ページだけpilot生成し、方向性が確認できるまで大量生成しない。
 
 pilotが方向性として良くても、final画像ではない。final化には、候補画像の視覚レビュー、必要な修正prompt、再生成または後編集、採用理由の記録が必要。
+
+## Manual Handoff Mode
+
+現在の標準運用は manual handoff mode です。Codexは画像生成そのものを実行せず、ユーザーがChatGPT / GPT画像生成に貼れるprompt packet、保存先、レビュー基準、修正promptを用意します。OpenAI APIの有無は、このフローの進行可否を決めません。
+
+promptは単独の素材ではなく、`prompt packet` として管理します。packetには最終prompt、生成後チェック、修正promptテンプレート、保存先、Codexへ戻す報告テンプレート、final化禁止ルールを含めます。
+
+manual handoff modeでは、ユーザーがprompt packetをGPT画像生成へ貼ります。Codexは勝手に画像生成APIやGPT画像生成を実行しません。ユーザーがrepoに戻した画像だけをcandidateとしてレビューします。

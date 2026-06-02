@@ -308,3 +308,10 @@ Every generated visual must answer:
 7. Does it avoid entrepreneurship pressure, money hype, competition, and IP imitation?
 8. Are props physically meaningful and connected to the learning action?
 9. Has the candidate passed visual review before being marked final?
+10. Was the image created through a documented prompt packet and returned as a candidate?
+
+## Manual Handoff Mode
+
+画像生成の標準運用は manual handoff mode とする。Codexはprompt packetとレビュー運用を作り、ユーザーがChatGPT / GPT画像生成にpromptを貼る。OpenAI API自動化は将来オプションであり、APIがないことは制作停止理由にしない。
+
+Prompt packets must ask for clean blank areas where exact Japanese copy, page numbers, worksheet fields, and card labels can be added later.

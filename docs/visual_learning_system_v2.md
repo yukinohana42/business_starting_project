@@ -175,3 +175,9 @@ HTML/CSSで作る場合も、丸い顔アイコンだけでは不合格です。
 HTML/CSSは主役のビジュアル生成手段ではなく、文字載せ、構図補正、フォーマット展開、contact sheet作成の補助として扱います。
 
 生成後には必ず `docs/image_generation_review_and_refinement_workflow.md` と `docs/image_generation_visual_review_checklist.md` に沿ってcandidateを確認します。最初の生成物はfinalではありません。小物の意味不明な位置、手や視線との不一致、文字崩れ、報酬や勝敗に見える要素があれば、修正promptを作るか再生成します。
+
+## Manual Handoff Mode
+
+このリポジトリでの標準運用は manual handoff mode です。Codexは画像を勝手に生成せず、prompt packet、制作計画、レビュー基準、保存先、candidate/final管理、後載せ文字設計、修正promptを作ります。ユーザーがChatGPT / GPT画像生成にpromptを貼り、生成画像をrepoへ戻します。
+
+制作前に必ず `docs/codex_gpt_image_generation_handoff_workflow.md` も読みます。Codexが画像を確認できない場合は、見たふりをせず `human visual review required` と記録します。

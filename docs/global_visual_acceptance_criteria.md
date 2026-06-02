@@ -107,3 +107,14 @@
 - 既存IP、金儲け煽り、勝敗、採点に見えないか。
 
 final採用前には、`PASS_FINAL`、`PASS_WITH_MINOR_FIX`、`REGENERATE_WITH_REVISED_PROMPT`、`REJECT` のいずれかで判定します。
+
+## 8. Manual Handoff Acceptance Criteria
+
+すべての教材で、画像は最初に `candidate` として扱います。ユーザーがGPT画像生成で作った画像をrepoへ戻した後、Codex reviewと人間承認を経てからでなければ `final` 扱いにしません。
+
+| 項目 | 合格 | 不合格 |
+|---|---|---|
+| prompt packet | 最終prompt、チェックリスト、修正prompt、保存先、報告テンプレがある | promptだけがあり、戻し方やレビュー条件がない |
+| 役割分担 | Codex、GPT画像生成、ユーザーの役割が明記されている | Codexが画像生成まで担当するように読める |
+| API依存 | APIがなくても手動handoffで進められる | APIキーがないと作業停止になる |
+| 視覚確認 | 画像を確認できない場合はhuman visual review requiredと書く | 見ていない画像をレビュー済みにする |

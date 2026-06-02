@@ -56,3 +56,9 @@ Before finalizing, verify:
 - It gives concrete words, not only philosophy.
 - It protects the child from scoring and pressure.
 - It stays warm without becoming a child-game UI.
+
+## Manual Handoff Rule
+
+If image generation is needed, use manual handoff mode. Codex prepares the prompt packet and review criteria; the user pastes the prompt into GPT image generation and returns candidate images for review.
+
+Parent-facing generated visuals should support warm facilitator context only. Exact voice examples, tables, checklists, and Japanese copy should be added by layout or Markdown, not entrusted to generated image text.

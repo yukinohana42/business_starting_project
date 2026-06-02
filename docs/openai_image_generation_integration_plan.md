@@ -263,3 +263,17 @@ Before full automation, run only one pilot:
 - choose 1 selected image
 - overlay exact Japanese copy manually or with a small layout script
 - review before continuing
+
+## Manual Handoff Mode Is Current Default
+
+現在の標準運用はAPI自動生成ではなく manual handoff mode です。Codexはprompt packet、レビュー、保存先、修正prompt、candidate/final管理を担当し、ユーザーがChatGPT / GPT画像生成にpromptを貼ってcandidate画像を作ります。
+
+API自動化は将来の補助機能です。APIがないことを理由に、プロンプト整備、手動生成、レビュー、教材設計を止めません。
+
+Manual handoff prompt packets live under:
+
+```text
+outputs/day1/image_generation/prompt_packets/
+```
+
+The same structure should be used for Day2-Day5 and parent-facing materials when they enter image production.

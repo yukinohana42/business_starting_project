@@ -54,3 +54,13 @@ Output:
 4. Whether production may proceed.
 
 Do not approve production if the material is merely readable but not a discovery-game learning experience.
+
+## Manual Handoff Review Rule
+
+Also review prompt packets and returned candidate images.
+
+Stop if:
+
+- A generated image is treated as final before candidate review and human approval.
+- Codex claims to have visually reviewed an image it cannot access.
+- The packet does not say where to save candidates or how to report back to Codex.

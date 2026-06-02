@@ -1,5 +1,32 @@
 # TODO
 
+## Current Next Task: Manual GPT Image Handoff
+
+- Day1の画像制作は、Codexが画像生成するのではなく、ユーザーがGPT画像生成へprompt packetを貼るmanual handoff modeで進める。
+- まず `outputs/day1/image_generation/prompt_packets/README.md` を人間確認する。
+- Page1 / Page2の既存方向性画像がある場合は、repoへcandidateとして配置する。
+- 既存画像を配置できない場合は、Page1からprompt packetを順番にGPT画像生成へ貼る。
+- Page1 candidateを保存し、`outputs/day1/image_generation/user_handoff_template.md` でCodexへ戻す。
+- Page2 candidateを保存し、同じテンプレートでCodexへ戻す。
+- Page3 candidate生成を1枚だけ行う。
+- Page4 candidate生成を1枚だけ行う。
+- Page5 candidate生成を1枚だけ行う。
+- Page6 candidate生成を1枚だけ行う。
+- 各candidateをCodexでレビューする。Codexが画像を見られない場合は `human visual review required` と記録する。
+- 必要なら修正promptで再生成する。
+- Day1 16:9 final 6枚を人間承認で確定する。
+- Day1 final contact sheetを作成する。
+- Day1の後載せ文字設計を行う。
+- Day1 16:9がOKなら4:5展開へ進む。
+- その後にDay1台本、カード、ワークシートへ反映する。
+- その後、親説明用資料の作成へ進む。
+- 親説明用資料は、まず `outputs/parents/parent_explanation_material_plan.md` を人間確認する。
+
+## Paused Route: Day1 v3 HTML/CSS Prototype
+
+- Day1 v3 HTML/CSS中心の制作は、画像生成前提のmanual handoff modeが整理されるまで進めない。
+- HTML/CSSは、後載せ文字、構図補正、contact sheet、4:5/A4展開の補助として扱う。
+
 ## Current Next Task: Day1 v3 Prototype Review
 
 - 人間が `outputs/day1/rendered/session_01_infographic_16x9_v3_prototype_contact_sheet.png` を確認する。
