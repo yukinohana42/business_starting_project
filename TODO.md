@@ -1,5 +1,13 @@
 # TODO
 
+## Current Next Task: Day1 v3 Prototype Review
+
+- 人間が `outputs/day1/rendered/session_01_infographic_16x9_v3_prototype_contact_sheet.png` を確認する。
+- 方向性がOKなら、Day1 v3正式版6ページの16:9 HTML/CSSへ進む。
+- 正式版6ページの16:9 PNG確認後に、4:5展開へ進む。
+- v3構成が確定してから、台本・カード・ワークシートへ反映する。
+- 最後に固定情報源をMarkdown中心で更新する。PNG/HTML/CSS本体は固定情報源フォルダへコピーしない。
+
 ## Priority 1
 
 - GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-visual-system-v2/` の内容を最終確認する

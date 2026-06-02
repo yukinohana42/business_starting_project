@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day1 Value Detective 16:9 v3 Prototype</title>
+  <link rel="stylesheet" href="./session_01_infographic_16x9_v3_prototype.css">
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const page = new URLSearchParams(window.location.search).get("page");
+      if (!page) return;
+      document.body.classList.add("capture-mode");
+      document.querySelectorAll(".page").forEach((section) => {
+        if (section.dataset.page !== page) section.remove();
+      });
+    });
+  </script>
+</head>
+<body>
+  <main class="deck prototype-deck" aria-label="Day1 Value Detective 16:9 v3 Prototype">
+    <section class="page page-01" data-page="1">
+      <header class="topline">
+        <div class="label">Day1 / Mission Board</div>
+        <ol class="quest-map" aria-label="進行マップ">
+          <li class="active">ミッション</li>
+          <li>観察</li>
+          <li>お金</li>
+          <li>価値カード</li>
+          <li>ケース</li>
+          <li>まとめ</li>
+        </ol>
+        <div class="page-count">01 / 06</div>
+      </header>
+
+      <div class="mission-layout">
+        <div class="mission-board">
+          <p class="board-tag">Mission Board</p>
+          <h1>お金と仕事の<br>正体を見破れ。</h1>
+          <div class="mission-card">
+            <span>今日のミッション</span>
+            <strong>仕事を「誰がどう変わるか」で見てみる</strong>
+          </div>
+          <div class="detective-note">
+            <span>探偵ノート</span>
+            <p>見るポイント: 誰がどう変わる？</p>
+            <div class="note-line"></div>
+            <div class="note-line short"></div>
+          </div>
+          <div class="goal-card">
+            <span>最後に書く文</span>
+            <strong>仕事とは、＿＿を＿＿に変えること。</strong>
+          </div>
+        </div>
+
+        <div class="scene-panel scene-mission">
+          <div class="stamp-slot">Discovery Stamp</div>
+          <svg class="person-svg yuu-svg" viewBox="0 0 360 560" role="img" aria-label="ユウが探偵ノートへメモしている">
+            <path class="shadow" d="M74 515c54 24 175 24 227 0 19-9 18-24-2-31-57-20-171-20-226 0-20 7-20 22 1 31Z"/>
+            <path class="leg" d="M133 384c-8 35-20 71-32 104h47c14-30 25-61 33-94Z"/>
+            <path class="leg" d="M205 390c12 35 27 67 45 96h48c-19-39-36-76-49-111Z"/>
+            <path class="shoe" d="M93 487h65c7 0 13 6 13 13v12H82v-11c0-7 5-14 11-14Z"/>
+            <path class="shoe" d="M241 485h69c7 0 12 6 12 13v12h-94v-11c0-8 6-14 13-14Z"/>
+            <path class="shirt" d="M122 229c12-24 41-38 75-34 34 3 61 22 67 50l21 111c-58 24-130 24-188 0Z"/>
+            <path class="jacket" d="M107 237c-20 25-32 63-37 106l45 10 22-109Z"/>
+            <path class="jacket" d="M258 241c24 27 40 66 48 112l-45 10-29-116Z"/>
+            <path class="neck" d="M168 177h45v45h-45Z"/>
+            <path class="head" d="M122 90c6-43 40-70 83-65 42 5 71 39 68 82-3 49-36 89-78 89-46 0-83-47-73-106Z"/>
+            <path class="hair" d="M118 101c3-49 43-85 91-80 46 5 79 45 72 96-30-5-57-16-80-34-17 20-45 33-83 38Z"/>
+            <path class="ear" d="M115 112c-16 1-23 24-8 37 7 6 15 4 19-3Z"/>
+            <path class="ear" d="M274 118c15 3 20 26 6 38-7 6-15 3-18-5Z"/>
+            <circle class="eye" cx="165" cy="126" r="5"/>
+            <circle class="eye" cx="223" cy="128" r="5"/>
+            <path class="mouth" d="M180 160c15 9 31 9 45 0"/>
+            <path class="arm" d="M120 261c-34 25-48 59-40 88 5 17 25 19 36 5 9-12 21-38 48-55Z"/>
+            <path class="arm" d="M262 265c31 16 48 39 55 71 4 17-12 30-28 22-16-8-27-31-54-47Z"/>
+            <path class="hand" d="M78 342c10-6 26 0 31 10 5 11-3 24-16 25-16 1-27-18-15-35Z"/>
+            <path class="hand" d="M284 346c10-8 27-3 32 9 5 13-5 26-19 26-15 0-26-17-13-35Z"/>
+            <rect class="notebook" x="44" y="318" width="113" height="78" rx="8" transform="rotate(-8 100 357)"/>
+            <path class="note-stroke" d="M62 343l74-10M63 363l68-9M66 382l49-7"/>
+            <path class="pen" d="M118 310l70-48 12 17-73 45Z"/>
+            <circle class="glass" cx="282" cy="225" r="29"/>
+            <path class="glass-line" d="M303 248l31 32"/>
+          </svg>
+          <div class="scene-caption">
+            <b>ユウ</b>がノートにメモ中。<br>
+            手元にペン、カード、虫眼鏡。
+          </div>
+        </div>
+      </div>
+
+      <div class="change-strip">
+        <span>仕事 = お金をもらう？</span>
+        <strong>→</strong>
+        <span>仕事 = 誰かの変化を見る</span>
+      </div>
+    </section>
+
+    <section class="page page-04" data-page="4">
+      <header class="topline">
+        <div class="label">Day1 / Card Table</div>
+        <ol class="quest-map" aria-label="進行マップ">
+          <li>ミッション</li>
+          <li>観察</li>
+          <li>お金</li>
+          <li class="active">価値カード</li>
+          <li>ケース</li>
+          <li>まとめ</li>
+        </ol>
+        <div class="page-count">04 / 06</div>
+      </header>
+
+      <div class="table-layout">
+        <div class="title-zone">
+          <p class="board-tag">Card Table - Value</p>
+          <h1>価値は、相手の<br>変化で見る。</h1>
+          <p class="short-lead">Before と After をつなげる。</p>
+        </div>
+
+        <div class="work-table" aria-label="ユウとソラが価値変換カードを作る机">
+          <div class="desk-label">価値変換カードを作る</div>
+          <div class="value-card value-green">
+            <span>Before</span>
+            <strong>困った</strong>
+            <b>→</b>
+            <span>After</span>
+            <strong>助かった</strong>
+          </div>
+          <div class="value-card value-blue">
+            <span>Before</span>
+            <strong>わからない</strong>
+            <b>→</b>
+            <span>After</span>
+            <strong>できそう</strong>
+          </div>
+          <div class="value-card value-yellow">
+            <span>Before</span>
+            <strong>退屈</strong>
+            <b>→</b>
+            <span>After</span>
+            <strong>楽しい</strong>
+          </div>
+          <div class="sticky sticky-01">誰が？</div>
+          <div class="sticky sticky-02">どう変わる？</div>
+          <div class="stamp-slot table-stamp">Discovery Stamp<br>価値変換</div>
+        </div>
+
+        <svg class="person-svg yuu-table-svg" viewBox="0 0 330 520" role="img" aria-label="ユウがカードを指差している">
+          <path class="shadow" d="M57 492c50 24 162 24 211 0 18-8 16-22-2-29-53-19-158-18-210 0-18 7-18 21 1 29Z"/>
+          <path class="leg" d="M119 360c-8 33-19 66-32 98h43c14-28 26-58 35-88Z"/>
+          <path class="leg" d="M192 362c10 33 23 64 41 93h45c-19-36-35-70-48-104Z"/>
+          <path class="shoe" d="M80 456h60c8 0 14 6 14 13v11H69v-10c0-7 5-14 11-14Z"/>
+          <path class="shoe" d="M225 454h64c7 0 12 6 12 13v11h-88v-10c0-8 6-14 12-14Z"/>
+          <path class="shirt" d="M111 214c16-22 43-33 75-29 34 3 57 21 64 48l18 103c-53 25-119 25-173 0Z"/>
+          <path class="neck" d="M155 168h42v42h-42Z"/>
+          <path class="head" d="M112 83c7-40 39-65 79-61 40 5 68 37 65 78-3 46-34 83-73 83-43 0-79-44-71-100Z"/>
+          <path class="hair" d="M108 94c3-47 41-81 86-76 43 5 75 42 69 89-28-4-54-15-75-31-17 18-43 30-80 35Z"/>
+          <circle class="eye" cx="154" cy="120" r="5"/>
+          <circle class="eye" cx="207" cy="121" r="5"/>
+          <path class="mouth" d="M168 151c12 8 28 8 41 0"/>
+          <path class="arm" d="M112 238c-25 25-38 52-42 82-2 15 14 25 27 16 13-9 19-35 45-57Z"/>
+          <path class="arm pointing" d="M239 239c45 14 75 34 96 65 10 15 0 31-17 29-21-3-45-32-85-45Z"/>
+          <path class="hand" d="M67 318c10-7 26-1 31 10 5 12-4 24-17 24-16 0-26-18-14-34Z"/>
+          <path class="hand" d="M316 303c13-4 27 6 28 20 1 15-15 25-27 17-12-8-15-30-1-37Z"/>
+          <rect class="notebook" x="35" y="286" width="102" height="68" rx="8" transform="rotate(-9 86 320)"/>
+          <path class="note-stroke" d="M51 309l67-9M53 327l55-7"/>
+        </svg>
+
+        <svg class="person-svg sora-svg" viewBox="0 0 350 520" role="img" aria-label="ソラが付箋を持ってカードへ書き込んでいる">
+          <path class="shadow" d="M61 493c52 23 171 23 223 0 18-8 17-23-2-30-56-19-167-19-222 0-19 7-19 22 1 30Z"/>
+          <path class="leg" d="M123 365c-7 33-18 65-31 96h44c13-28 24-58 32-89Z"/>
+          <path class="leg" d="M204 364c12 32 26 63 43 92h46c-20-36-37-71-49-104Z"/>
+          <path class="shoe" d="M85 459h64c7 0 13 6 13 13v11H73v-10c0-8 6-14 12-14Z"/>
+          <path class="shoe" d="M239 456h66c8 0 13 6 13 13v11h-91v-10c0-8 6-14 12-14Z"/>
+          <path class="shirt sora-shirt" d="M119 216c16-22 47-34 80-30 35 4 62 22 70 49l20 103c-57 27-128 27-184 0Z"/>
+          <path class="neck" d="M166 168h43v43h-43Z"/>
+          <path class="head" d="M123 83c8-40 41-64 82-58 39 5 67 38 63 80-4 46-35 82-76 82-44 0-80-45-69-104Z"/>
+          <path class="hair sora-hair" d="M120 96c2-45 36-76 82-74 46 2 78 34 76 78-28-4-55-14-78-31-16 20-42 34-80 42Z"/>
+          <path class="hair-tail" d="M263 85c38 20 46 61 17 89-9-21-24-36-44-45Z"/>
+          <circle class="eye" cx="166" cy="122" r="5"/>
+          <circle class="eye" cx="219" cy="123" r="5"/>
+          <path class="mouth" d="M180 153c13 8 29 8 43 0"/>
+          <path class="arm" d="M124 239c-30 19-52 44-63 76-5 15 9 29 24 22 15-7 29-31 59-50Z"/>
+          <path class="arm writing" d="M268 242c33 10 56 29 70 56 8 15-2 30-19 28-18-2-35-22-65-34Z"/>
+          <path class="hand" d="M58 315c11-6 26 2 30 14 4 13-8 24-21 22-15-3-22-24-9-36Z"/>
+          <path class="hand" d="M316 298c11-7 26 0 31 12 5 13-7 26-21 24-14-2-23-25-10-36Z"/>
+          <rect class="sticky-note" x="36" y="286" width="74" height="58" rx="7" transform="rotate(-10 73 315)"/>
+          <path class="pen" d="M281 276l61-38 10 16-63 43Z"/>
+        </svg>
+      </div>
+
+      <div class="action-ribbon">
+        <strong>やること</strong>
+        <span>3枚から1つ選び、Before と After を声に出してつなげる。</span>
+      </div>
+    </section>
+
+    <section class="page page-05" data-page="5">
+      <header class="topline">
+        <div class="label">Day1 / Case File</div>
+        <ol class="quest-map" aria-label="進行マップ">
+          <li>ミッション</li>
+          <li>観察</li>
+          <li>お金</li>
+          <li>価値カード</li>
+          <li class="active">ケース</li>
+          <li>まとめ</li>
+        </ol>
+        <div class="page-count">05 / 06</div>
+      </header>
+
+      <div class="case-layout">
+        <div class="case-title">
+          <p class="board-tag">Business Detective Case File</p>
+          <h1>この仕事は、<br>誰をどう<br>変えている？</h1>
+          <p class="short-lead">3つの証拠カードから1つ選び、変化を言う。</p>
+        </div>
+
+        <div class="case-file" aria-label="ビジネス探偵のケースファイル">
+          <div class="case-tab">Case File</div>
+          <div class="pin-line line-01"></div>
+          <div class="pin-line line-02"></div>
+          <div class="evidence-card card-convenience">
+            <span class="evidence-title">コンビニ</span>
+            <p><b>誰が</b> 急いでいる人</p>
+            <p><b>変化</b> すぐ買えて助かる</p>
+            <div class="check-row"><span></span>発見メモ</div>
+          </div>
+          <div class="evidence-card card-study">
+            <span class="evidence-title">塾 / 学習サポート</span>
+            <p><b>誰が</b> わからない人</p>
+            <p><b>変化</b> できそうになる</p>
+            <div class="check-row"><span></span>発見メモ</div>
+          </div>
+          <div class="evidence-card card-game">
+            <span class="evidence-title">スマホゲーム</span>
+            <p><b>誰が</b> 退屈な時間の人</p>
+            <p><b>変化</b> 楽しい時間になる</p>
+            <div class="check-row"><span></span>発見メモ</div>
+          </div>
+          <div class="detective-note case-note">
+            <span>Business Detective Note</span>
+            <p>誰が → どう変わる？</p>
+            <div class="note-line"></div>
+          </div>
+          <div class="stamp-slot case-stamp">Discovery Stamp<br>観察メモ</div>
+        </div>
+
+        <svg class="person-svg yuu-case-svg" viewBox="0 0 330 520" role="img" aria-label="ユウがケースファイルを見ている">
+          <path class="shadow" d="M55 493c52 24 162 24 211 0 18-8 17-23-2-30-54-19-159-19-211 0-19 7-18 22 2 30Z"/>
+          <path class="leg" d="M111 366c-7 33-18 64-31 95h44c13-28 24-58 32-88Z"/>
+          <path class="leg" d="M191 365c11 33 25 63 42 91h45c-19-36-36-70-48-103Z"/>
+          <path class="shoe" d="M73 459h64c7 0 13 6 13 13v11H62v-10c0-8 5-14 11-14Z"/>
+          <path class="shoe" d="M226 456h65c8 0 13 6 13 13v11h-90v-10c0-8 6-14 12-14Z"/>
+          <path class="shirt" d="M106 216c16-22 45-34 77-31 34 3 59 21 67 49l19 104c-55 26-124 26-179 0Z"/>
+          <path class="neck" d="M154 168h42v42h-42Z"/>
+          <path class="head" d="M110 84c7-40 39-65 79-61 40 5 68 37 65 78-3 46-34 83-73 83-43 0-79-44-71-100Z"/>
+          <path class="hair" d="M106 95c3-47 41-81 86-76 43 5 75 42 69 89-28-4-54-15-75-31-17 18-43 30-80 35Z"/>
+          <circle class="eye" cx="152" cy="121" r="5"/>
+          <circle class="eye" cx="206" cy="122" r="5"/>
+          <path class="mouth" d="M166 153c12 8 28 8 41 0"/>
+          <path class="arm" d="M111 238c-28 22-43 50-48 82-2 15 14 26 27 16 13-9 22-35 50-55Z"/>
+          <path class="arm" d="M238 240c31 14 50 34 61 63 6 16-6 30-22 26-17-4-30-26-57-40Z"/>
+          <path class="hand" d="M60 317c10-7 26-1 31 11 4 12-6 25-19 24-16-1-25-19-12-35Z"/>
+          <path class="hand" d="M273 307c11-8 27-2 31 11 4 13-8 25-21 24-15-1-23-23-10-35Z"/>
+          <circle class="glass" cx="65" cy="286" r="31"/>
+          <path class="glass-line" d="M88 309l35 35"/>
+          <rect class="notebook" x="198" y="282" width="106" height="70" rx="8" transform="rotate(8 251 317)"/>
+          <path class="note-stroke" d="M217 305l68 10M216 324l57 8"/>
+        </svg>
+
+        <svg class="person-svg sora-case-svg" viewBox="0 0 340 520" role="img" aria-label="ソラが証拠カードを貼っている">
+          <path class="shadow" d="M59 494c52 23 169 23 221 0 18-8 16-22-2-29-55-19-165-19-219 0-18 7-18 21 0 29Z"/>
+          <path class="leg" d="M121 366c-7 33-18 64-31 95h44c13-28 24-58 32-88Z"/>
+          <path class="leg" d="M199 364c12 33 26 64 43 92h46c-20-36-37-71-49-104Z"/>
+          <path class="shoe" d="M83 459h64c7 0 13 6 13 13v11H71v-10c0-8 6-14 12-14Z"/>
+          <path class="shoe" d="M235 456h66c8 0 13 6 13 13v11h-91v-10c0-8 6-14 12-14Z"/>
+          <path class="shirt sora-shirt" d="M116 216c17-22 47-34 80-30 35 4 62 22 70 49l20 103c-57 27-128 27-184 0Z"/>
+          <path class="neck" d="M163 168h43v43h-43Z"/>
+          <path class="head" d="M120 83c8-40 41-64 82-58 39 5 67 38 63 80-4 46-35 82-76 82-44 0-80-45-69-104Z"/>
+          <path class="hair sora-hair" d="M117 96c2-45 36-76 82-74 46 2 78 34 76 78-28-4-55-14-78-31-16 20-42 34-80 42Z"/>
+          <path class="hair-tail" d="M260 85c37 20 45 61 16 89-9-21-24-36-43-45Z"/>
+          <circle class="eye" cx="163" cy="122" r="5"/>
+          <circle class="eye" cx="216" cy="123" r="5"/>
+          <path class="mouth" d="M177 153c13 8 29 8 43 0"/>
+          <path class="arm" d="M120 239c-24 20-39 45-45 77-3 16 12 27 26 18 13-8 21-34 45-53Z"/>
+          <path class="arm pinning" d="M263 240c38-1 68 9 93 33 13 12 7 30-10 33-21 4-50-16-85-15Z"/>
+          <path class="hand" d="M72 315c11-7 26 0 30 13 4 12-8 24-21 23-15-2-23-23-9-36Z"/>
+          <path class="hand" d="M338 267c12-5 27 4 29 18 2 15-14 27-27 20-13-7-16-30-2-38Z"/>
+          <rect class="evidence-mini" x="288" y="228" width="70" height="55" rx="7" transform="rotate(-6 323 256)"/>
+          <path class="pin-dot" d="M321 235a7 7 0 1 0 1 0Z"/>
+        </svg>
+      </div>
+
+      <div class="case-action-ribbon">
+        <strong>やること</strong>
+        <span>1つ選んで「誰が、どう変わるか」を言う。</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
