@@ -28,6 +28,21 @@
 - Day1 6枚が揃うまでは4:5展開しない。
 - final採用前に後載せ文字範囲を決める。
 
+## Current Next Task: Day1 16:9 Image Completion
+
+- Page 1 / Page 2 candidate画像をrepo内に配置し、finalレビューする。
+- Page 3 candidate生成を1枚だけ行う。
+- Page 3 visual reviewを行う。
+- Page 4 candidate生成を1枚だけ行う。
+- Page 4 visual reviewを行う。
+- Page 5 candidate生成を1枚だけ行う。
+- Page 5 visual reviewを行う。
+- Page 6 candidate生成を1枚だけ行う。
+- Page 6 visual reviewを行う。
+- Day1 16:9 final 6枚を確定する。
+- その後に4:5展開へ進む。
+- その後に台本・カード・ワークシートへ反映する。
+
 ## Priority 1
 
 - GPT固定情報源フォルダ `docs/gpt-fixed-context-2026-06-01-visual-system-v2/` の内容を最終確認する

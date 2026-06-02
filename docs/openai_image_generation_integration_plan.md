@@ -84,7 +84,7 @@ Each generation must save a manifest record.
   "generation_date": "YYYY-MM-DD",
   "tool": "openai",
   "model": "verify-before-use",
-  "selected_output": "assets/generated/day1/page_01/selected/day1_page_01_v001.png",
+  "final_output": "assets/generated/day1/page_01/final/day1_page_01_v001.png",
   "candidate_outputs": [],
   "review_status": "pending_human_review",
   "review_memo": "",
@@ -185,7 +185,7 @@ Generated asset:
 
 ```text
 assets/generated/day1/page_01/candidates/day1_page_01_v001_candidate_01.png
-assets/generated/day1/page_01/selected/day1_page_01_v001.png
+assets/generated/day1/page_01/final/day1_page_01_v001.png
 ```
 
 Prompt:
