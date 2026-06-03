@@ -142,9 +142,12 @@ outputs/day1/image_generation/candidates/day1_page_05_candidate_YYYYMMDD_01.png
 
 ## 6. Codexへ戻すときの報告テンプレート
 
+`outputs/day1/image_generation/user_handoff_template.md` を使ってください。
+
 ```text
 page_id: day1_page_05
 prompt_packet: outputs/day1/image_generation/prompt_packets/day1_page_05_prompt_packet_for_gpt.md
+candidate_filename:
 candidate_path:
 first_impression:
 good_points:

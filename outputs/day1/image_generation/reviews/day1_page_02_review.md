@@ -34,7 +34,7 @@ The user approved the Page 2 direction. However, no candidate image file exists 
 
 ## Finalization Requirements
 
-- candidate画像を `assets/generated/day1/candidates/` または `outputs/day1/image_generation/candidates/` に配置する。
+- candidate画像を `assets/generated/day1/page_02/candidates/` または `outputs/day1/image_generation/candidates/` に配置する。
 - Beforeが笑いものになっていないか確認する。
 - Afterが勝利、報酬、大成功に見えないか確認する。
 - ユウの手、視線、ノート、ペン、カードが自然につながっているか確認する。

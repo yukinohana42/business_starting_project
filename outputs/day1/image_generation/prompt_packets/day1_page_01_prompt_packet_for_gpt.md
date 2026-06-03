@@ -133,6 +133,7 @@ outputs/day1/image_generation/candidates/day1_page_01_candidate_YYYYMMDD_01.png
 ```text
 page_id: day1_page_01
 prompt_packet: outputs/day1/image_generation/prompt_packets/day1_page_01_prompt_packet_for_gpt.md
+candidate_filename:
 candidate_path:
 first_impression:
 good_points:

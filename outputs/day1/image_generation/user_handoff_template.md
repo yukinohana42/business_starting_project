@@ -15,6 +15,7 @@ prompt_packet_used:
 generation_tool: ChatGPT / GPT image generation / other
 generation_date:
 aspect_ratio: 16:9
+candidate_filename:
 candidate_path:
 ```
 
@@ -148,6 +149,7 @@ Day1 image candidateをレビューしてください。
 
 page_id:
 prompt_packet_used:
+candidate_filename:
 candidate_path:
 human_candidate_decision:
 first_impression:

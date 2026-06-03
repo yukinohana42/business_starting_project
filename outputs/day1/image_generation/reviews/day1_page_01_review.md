@@ -36,7 +36,7 @@ Page 1 direction is approved by the user, but no candidate image file exists in 
 
 ## Finalization Requirements
 
-- `assets/generated/day1/candidates/` または `outputs/day1/image_generation/candidates/` にcandidate画像を配置する。
+- `assets/generated/day1/page_01/candidates/` または `outputs/day1/image_generation/candidates/` にcandidate画像を配置する。
 - 画像そのものを視覚レビューする。
 - 虫眼鏡、ペン、ノート、カード、スタンプ、Quest Mapが学習行動と自然につながっているか確認する。
 - 重要な日本語文字を後載せする範囲を決める。
