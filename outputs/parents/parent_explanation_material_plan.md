@@ -133,17 +133,27 @@ NG:
 - 安全境界。
 - 余白と印刷可読性。
 
-## Next Prompt Packet To Create
+## Prompt Packets Ready
 
-次工程では、まず親向けPage 1のprompt packetを作る。
-
-候補:
+親向け画像・図解作成用のprompt packetは次に集約済み。
 
 ```text
-outputs/parents/image_generation/prompt_packets/parent_page_01_prompt_packet_for_gpt.md
+outputs/parents/image_generation/prompt_packets/
 ```
 
-ただし、その前にこの計画を人間確認する。
+含まれるもの:
+
+- 親説明資料の画像・図解prompt packet 10個。
+- 親向けvisual anchor。
+- README。
+
+ただし、画像生成前にこの計画を人間確認する。
+
+次に作る場合の最初の候補:
+
+```text
+outputs/parents/image_generation/prompt_packets/parent_01_cover_facilitator_guide_prompt_for_gpt.md
+```
 
 ## Human Review Before Production
 

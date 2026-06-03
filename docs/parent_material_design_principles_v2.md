@@ -93,3 +93,11 @@
 親向け資料でも、画像生成が必要な場合はmanual handoff modeを使います。Codexはprompt packet、図解方針、レビュー基準、保存先、修正promptを作り、ユーザーがGPT画像生成へpromptを貼ります。
 
 親向け資料では文字の正確さと実用性が重要です。画像生成には場面、人物の距離感、問いカード、OK/NGカード、安全境界の雰囲気を任せ、正確な本文、声かけ例、表、チェックリストは後編集またはMarkdown/スライド組版で載せます。
+
+親向け画像・図解のprompt packetは次に集約します。
+
+```text
+outputs/parents/image_generation/prompt_packets/
+```
+
+画像生成前に `outputs/parents/parent_explanation_material_plan.md` を人間確認します。生成後はcandidateとして保存し、レビューと人間承認なしにfinal化しません。

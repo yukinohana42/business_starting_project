@@ -107,8 +107,18 @@ outputs/parents/image_generation/candidates/parent_page_01_candidate_YYYYMMDD_01
 7. 必要なら修正promptを作る。
 8. 人間承認後にだけfinal候補へ進める。
 
+## Prompt Packets Ready
+
+親説明用資料の画像・図解prompt packetは次に集約済み。
+
+```text
+outputs/parents/image_generation/prompt_packets/
+```
+
+このフォルダには、cover、workshop purpose、parent role、OK/NG sheet、Question Card、Safety Boundary、Session Flow Map、reward/badge explanation、after-session reflection、parent visual anchorの10個がある。
+
 ## Next Action
 
 まず `outputs/parents/parent_explanation_material_plan.md` を人間確認する。
 
-確認後、親説明資料のPage 1 prompt packetを作る。画像生成ではなく図解中心で十分と判断された場合は、Markdown/スライド原稿から作る。
+確認後、ユーザーが必要なprompt packetをGPT画像生成へ貼る。画像生成ではなく図解中心で十分と判断された場合は、Markdown/スライド原稿から作る。

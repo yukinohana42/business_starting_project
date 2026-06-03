@@ -17,7 +17,19 @@ Updated prompt files:
 
 Manual handoff prompt packet files:
 
+- `outputs/image_generation_handoff_README.md`
 - `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/README.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_01_page_01_mission_board_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_02_page_02_case_file_work_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_03_page_03_evidence_board_money_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_04_page_04_card_table_value_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_05_page_05_business_detective_case_file_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_06_page_06_final_mission_sheet_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_07_character_yuu_reference_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_08_character_sora_reference_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_09_character_miho_reference_prompt_for_gpt.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_10_common_ui_parts_prompt_for_gpt.md`
 - `outputs/day1/image_generation/prompt_packets/day1_page_01_prompt_packet_for_gpt.md`
 - `outputs/day1/image_generation/prompt_packets/day1_page_02_prompt_packet_for_gpt.md`
 - `outputs/day1/image_generation/prompt_packets/day1_page_03_prompt_packet_for_gpt.md`
@@ -25,6 +37,17 @@ Manual handoff prompt packet files:
 - `outputs/day1/image_generation/prompt_packets/day1_page_05_prompt_packet_for_gpt.md`
 - `outputs/day1/image_generation/prompt_packets/day1_page_06_prompt_packet_for_gpt.md`
 - `outputs/day1/image_generation/user_handoff_template.md`
+- `outputs/parents/image_generation/prompt_packets/README.md`
+- `outputs/parents/image_generation/prompt_packets/parent_01_cover_facilitator_guide_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_02_why_this_workshop_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_03_parent_role_facilitator_not_teacher_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_04_ok_ng_response_sheet_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_05_question_card_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_06_safety_boundary_card_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_07_session_flow_map_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_08_reward_badge_explanation_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_09_after_session_reflection_prompt_for_gpt.md`
+- `outputs/parents/image_generation/prompt_packets/parent_10_parent_material_visual_anchor_prompt_for_gpt.md`
 
 New prompt files:
 
@@ -54,12 +77,14 @@ For image-first visuals, create a prompt packet instead of asking Codex to gener
 
 ## Recommended Next Codex Task
 
-Review Day1 manual handoff prompt packets first:
+Review manual handoff prompt packets first:
 
-- `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/image_generation_handoff_README.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/README.md`
+- `outputs/parents/image_generation/prompt_packets/README.md`
 - `outputs/day1/image_generation/user_handoff_template.md`
 
-Then the user should generate or place candidates one page at a time. The next Codex task should be candidate review or correction prompt creation, not PNG/PDF/PPTX production.
+Then the user should generate or place candidates one page at a time. If Page1/Page2 candidates are already available, the next Day1 prompt to paste is Page3. The next Codex task should be candidate review or correction prompt creation, not PNG/PDF/PPTX production.
 
 If a future request resumes HTML/CSS, it should explicitly say:
 

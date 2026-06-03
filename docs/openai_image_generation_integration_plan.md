@@ -274,6 +274,14 @@ Manual handoff prompt packets live under:
 
 ```text
 outputs/day1/image_generation/prompt_packets/
+outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/
+outputs/parents/image_generation/prompt_packets/
 ```
 
 The same structure should be used for Day2-Day5 and parent-facing materials when they enter image production.
+
+Overall manual handoff instructions live at:
+
+```text
+outputs/image_generation_handoff_README.md
+```

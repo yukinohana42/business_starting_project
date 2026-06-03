@@ -42,6 +42,18 @@
 - final化しないルール。
 - 文字は後載せ前提であること。
 
+## Current Prompt Packet Folders
+
+現在の手動handoffで使う主なprompt packet集約先:
+
+```text
+outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/
+outputs/parents/image_generation/prompt_packets/
+outputs/image_generation_handoff_README.md
+```
+
+Day1には本編6枚、Yuu / Sora / Miho reference、common UI partsの合計10個がある。親向けには説明資料用の画像・図解prompt packet 10個がある。
+
 ## File Management
 
 推奨保存先:

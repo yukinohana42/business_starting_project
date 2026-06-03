@@ -6,10 +6,10 @@
 | --- | --- | --- | --- |
 | Page 1 Mission Board | direction approved / needs final review | `outputs/day1/image_generation/reviews/day1_page_01_review.md` | User said: 「むっちゃいい感じ。この方向ですすめてほしい」. Candidate image file is not in repo. |
 | Page 2 Case File - Work | candidate direction approved / needs final review | `outputs/day1/image_generation/reviews/day1_page_02_review.md` | User said: 「よい！」. Candidate image file is not in repo. |
-| Page 3 Evidence Board - Money | prompt packet ready / candidate pending | `outputs/day1/image_generation/prompt_packets/day1_page_03_prompt_packet_for_gpt.md` | Generate manually in ChatGPT / GPT image generation, one candidate at a time. |
-| Page 4 Card Table - Value | prompt ready | `outputs/day1/prompts/day1_page_04_image_generation_prompt_final.md` | Candidate generation pending. |
-| Page 5 Business Detective Case File | prompt ready | `outputs/day1/prompts/day1_page_05_image_generation_prompt_final.md` | Candidate generation pending. |
-| Page 6 Final Mission Sheet | prompt ready | `outputs/day1/prompts/day1_page_06_image_generation_prompt_final.md` | Candidate generation pending. |
+| Page 3 Evidence Board - Money | prompt packet ready / candidate pending | `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_03_page_03_evidence_board_money_prompt_for_gpt.md` | Generate manually in ChatGPT / GPT image generation, one candidate at a time. |
+| Page 4 Card Table - Value | prompt packet ready / candidate pending | `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_04_page_04_card_table_value_prompt_for_gpt.md` | Candidate generation pending. |
+| Page 5 Business Detective Case File | prompt packet ready / candidate pending | `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_05_page_05_business_detective_case_file_prompt_for_gpt.md` | Candidate generation pending. |
+| Page 6 Final Mission Sheet | prompt packet ready / candidate pending | `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_06_page_06_final_mission_sheet_prompt_for_gpt.md` | Candidate generation pending. |
 
 ## Important Boundary
 
@@ -21,7 +21,7 @@ Page 1 and Page 2 are direction-approved by the user, but actual candidate image
 
 1. Place Page 1 and Page 2 candidate image files in `assets/generated/day1/page_01/candidates/` and `assets/generated/day1/page_02/candidates/`, or use `outputs/day1/image_generation/candidates/` as the temporary alternative.
 2. Visually review Page 1 and Page 2 using `docs/image_generation_visual_review_checklist.md`.
-3. Generate Page 3 candidate from `outputs/day1/image_generation/prompt_packets/day1_page_03_prompt_packet_for_gpt.md`.
+3. Generate Page 3 candidate from `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_03_page_03_evidence_board_money_prompt_for_gpt.md`.
 4. Visually review Page 3.
 5. If needed, create correction prompt and regenerate Page 3.
 6. Repeat candidate generation and visual review for Page 4.
@@ -78,6 +78,10 @@ Prompt packet index:
 
 `outputs/day1/image_generation/prompt_packets/README.md`
 
+Day1 10-prompt folder:
+
+`outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/README.md`
+
 User handoff template:
 
 `outputs/day1/image_generation/user_handoff_template.md`
@@ -92,3 +96,15 @@ Current order:
 6. Review, revise, and only then consider final adoption.
 
 Codex does not run image generation in this workflow. The user pastes prompt packets into ChatGPT / GPT image generation.
+
+## Day1 10 Prompt Packet Set
+
+The Day1 handoff folder now includes 10 prompt packets:
+
+- Page1 to Page6 core visuals.
+- Yuu, Sora, and Miho character reference prompts.
+- Common UI parts prompt.
+
+If Page1 / Page2 existing direction images are not available, start with Page1. If Page1 / Page2 candidates are already placed in the repo, the next prompt to paste is Page3:
+
+`outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/day1_03_page_03_evidence_board_money_prompt_for_gpt.md`

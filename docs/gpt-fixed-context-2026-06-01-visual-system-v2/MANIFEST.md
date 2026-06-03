@@ -68,9 +68,16 @@ The latest operational rule is manual GPT image handoff. Codex prepares prompt p
 Current addenda outside this fixed context:
 
 - `docs/codex_gpt_image_generation_handoff_workflow.md`
+- `outputs/image_generation_handoff_README.md`
 - `outputs/day1/image_generation/prompt_packets/README.md`
+- `outputs/day1/image_generation/prompt_packets/day1_10_image_prompts_for_gpt/README.md`
 - `outputs/day1/image_generation/user_handoff_template.md`
+- `outputs/parents/image_generation/prompt_packets/README.md`
 - `outputs/parents/parent_explanation_material_plan.md`
 - `outputs/parents/parent_explanation_prompt_packet_plan.md`
 
 No images, HTML, CSS, PDFs, or PPTX files are copied into this fixed context folder.
+
+## Prompt Packet Aggregation
+
+Day1 10 prompt packets and parent-facing 10 prompt packets are recorded by path only. The fixed context does not include generated image files.
